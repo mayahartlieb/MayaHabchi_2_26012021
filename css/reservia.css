@@ -94,8 +94,7 @@ définir cinq selecteurs pour mes cinq zones*/
 	padding: 0px 0px; /*On a 0 en haut et en bas et 20 a droite et a gauche */
 	height: 120px;
 	padding-top: 0px;
-	margin-top: 0px;
-	
+	margin-top: 0px;	
 	max-height: 108px;
 	
 }
@@ -137,8 +136,8 @@ définir cinq selecteurs pour mes cinq zones*/
 }
 
 #header ul li a:focus {
-		border-bottom: solid 3px #609ffd;
 
+		border-bottom: solid 3px #609ffd;
 		color: #0065FC;
 	}
 
@@ -148,6 +147,7 @@ définir cinq selecteurs pour mes cinq zones*/
 
 
 #mainNav{
+
 	background-color: #ffffff;
 	padding-bottom:2rem; /* top, right, bottom, left */
 	/*border: 2px solid black;*/
@@ -301,15 +301,20 @@ form.search-form button.Rechercher{
 
 .card__title{
 	padding: 1rem;
+	background-color: #ffffff;
+	
 }
 
 .card__description{
 	padding: 0 1rem;
+	background-color: #ffffff;
+	
 }
 
 .card div.card__body:hover{
 	transform:scale(1.02);
 }
+
 
 #mainContent aside{
 	background-color: #f2f2f2 ;
@@ -329,27 +334,9 @@ form.search-form button.Rechercher{
 	*/
 }
 
-.aside figcaption{
-	background-color: #ffffff;
-	/*avec le rgba je définis une opacité à mon titre*/
-	background-color: rgba(255,255,255,0.80);
-	/*
-	padding: ;
-	color: ;
-		*/
-	font-family: Raleway, Verdana, sans-serif;
-	/*
-	font-size: 32pt;
-		*/
-
-
-}
-
-
-
 
 #mainContent section{
-	background-color: #ffffff;
+	background-color: #f2f2f2 ;
 	padding: 0px 20px;
 	border-radius: 22px;	
 	grid-template-columns: repeat(auto-fit, minmax(12rem,16rem));
@@ -434,10 +421,7 @@ les unes à côté des autres sans espacements. */
 
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
-
-@media (max-width: 1024px){
-
-	
+@media all and (max-width: 1024px){
 
 /*wrapper*/
 
@@ -537,28 +521,18 @@ les unes à côté des autres sans espacements. */
 
 
 	#mainContent div.row {
+
 		display: flex;
 		justify-content: space-between;
 	}
 
-	#mainContent section{
-		background-color: #F2F2F2;
-		border-radius: 22px;
-	}
-
-
+	
+	
 
 
 /*footer*/
 
-	#footer div.row {
-		display: flex;
-		margin-left: 2rem;
-		margin-right: 3rem;
-		align-items: flex-start;
-		height: 180px;
-		
-	}
+	
 
 	.footer div.container{
 		display: flex;
@@ -576,7 +550,7 @@ les unes à côté des autres sans espacements. */
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 	
-@media (max-width: 1480px){
+@media all and (max-width: 1480px){
 
 
 /*wrapper*/
@@ -602,7 +576,7 @@ les unes à côté des autres sans espacements. */
 	}
 
 	#header ul li:first-child{
-		margin-right: auto;
+		margin-right: auto;  /*auto signifie : prends toute la place disponible*/
 		
 	}
 
