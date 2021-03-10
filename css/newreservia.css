@@ -42,6 +42,8 @@ a {
 	text-decoration: none;
 	/*I want to change the color of my links to have the same color as the text */
 	color: #606060;
+	font-family: 'Raleway';
+
 
 }
 
@@ -68,6 +70,11 @@ h2{
 	font-weight: bold;
 }
 
+h3{
+	color: black;
+	font-size: large;
+	font-weight: bold;
+}
 
 p{
 	font-size: medium;
@@ -186,6 +193,7 @@ définir cinq selecteurs pour mes cinq zones*/
 
 #mainNav header h2{
 
+	padding-top: 1rem;
 	color: black;
 	font-weight: bold;
 	font-size: larger;
@@ -209,12 +217,17 @@ définir cinq selecteurs pour mes cinq zones*/
 	/*border: 2px solid blue;*/
 	padding-bottom: 3rem;
 	padding-top: 1rem;
+
 }
 
 #mainNav ul li a{
 
-	padding:1rem;
+	padding: 0.75rem 1rem 0.75rem 0; /* top, right, bottom, left */
 	margin-left:1.5rem;
+	font-family: 'Raleway', sans-serif;
+	color: black;
+	font-weight: bolder;
+	font-size: large;
 }
 
 
@@ -229,16 +242,27 @@ définir cinq selecteurs pour mes cinq zones*/
 	
 }
 
-.fa-money-bill-wave:before, .fa-child:before, .fa-heart:before, .fa-heart:before, .fa-dog:before{
+.fa-money-bill-wave:before, .fa-child:before, .fa-heart:before, .fa-dog:before{
 
 	color: #0065fc;
-	padding-right: 12px;
 	background-color:#DEEBFF;
 	border-radius: 22px;
 	padding:13px;
-	border: 2px solid #DEEBFF;
+	border: 2px solid #F2F2F2;
+	
 }
 
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
+
+	padding: 1rem 1rem 1rem 0;
+	font-weight: bolder;
+	color: black;
+}
+
+.fa:after, .far:after, .fas:after{
+
+	font-family: 'Raleway';
+}
 
 form.search-form button.search_icon{
 
@@ -269,6 +293,7 @@ form.search-form button.Rechercher{
 
 .search-form{
 
+	padding-bottom: 1rem;
 	display: inline-flex;
 }
 
@@ -284,15 +309,21 @@ form.search-form button.Rechercher{
 ::placeholder {
 
     color: black;
+	font-weight: bolder;
     opacity: 1; /* Firefox */
+	font-family: 'Raleway';
   }
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color: black;
+   font-weight: bolder;
+   font-family: 'Raleway';
   }
   
 ::-ms-input-placeholder { /* Microsoft Edge */
    color: black;
+   font-weight: bolder;
+   font-family: 'Raleway';
   }
 
 
@@ -309,20 +340,28 @@ form.search-form button.Rechercher{
 }
 
 
-.button-group li.button{
-
-	margin-right: 2rem;
-}
-
 .button-group li a{
 	
 	font-weight: bold!important;
-	border: 2px solid #f2f2f2;
+	border-top: 2px double #f2f2f2;
+	border-right: 2px double #f2f2f2;
+	border-bottom: 2px double #f2f2f2;
 	border-radius: 22px;
 	margin: 10px 10px 10px 0;
 	font-weight: bold; 
 	padding-right: 5px;
 
+}
+
+.fa-info-circle:before{
+
+	background-color:#0065fc;
+	color: #ffffff;
+}
+
+#mainNav#text{
+	font-weight: bold;
+	color: black;
 }
 
 
