@@ -1,0 +1,273 @@
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+body {
+
+	background-color: #ffffff;
+	font-family: Raleway;
+	color: #606060;	
+
+}
+
+a {
+	/*I want to remove my underlines*/
+	text-decoration: none;
+	/*I want to change the color of my links to have the same color as the text */
+	color: #606060;
+	font-family: 'Raleway';
+
+
+}
+
+/*I created two 'button' classes to remove hover effect from logo*/
+.button:hover, .button-group a:hover{
+
+	background-color: #DEEBFF ;
+	
+}
+
+
+h1 {
+	
+	color: black;
+	font-size: larger;
+	padding:1rem;
+	/*I want to have a padding for my titles on the top and bottom */
+}
+
+
+h2{
+	color: black;
+	font-size: larger;
+	font-weight: bold;
+}
+
+h3{
+	color: black;
+	font-size: large;
+	font-weight: bold;
+}
+
+p{
+	font-size: medium;
+}
+
+/* Par défaut, une étoile est en grise,
+   avec un padding */
+
+   .fa-star {
+
+	color: #f2f2f2;
+	padding: 0.0625rem;
+    }
+
+/* Si elle porte en plus la classe '.blue', elle sera en bleu. */
+.fa-star.blue {
+	color: #0065fc;
+   }
+
+
+/* Le groupe '.stars' positionne les étoiles
+les unes à côté des autres sans espacements. */
+#stars {
+		display: inline-flex;
+		justify-content: center;
+		font-size: 1em;
+	}
+
+
+img {
+
+	/*I want my images to fit in the container*/
+	width: 100%;
+}
+
+
+.wrapper{
+
+	max-width: 1024px; /*Un point d'arrêt fluide */
+	margin: 0px auto; /*Pour centrer les éléments: 
+	je vais définir une marge égale à 0 en haut et en bas et auto à droite et à gauche*/
+	
+}
+
+#mainContent section header, #additionalContent header{
+
+	padding-top: 2rem;
+	font-family: 'Raleway';
+	font-size:larger;
+	font-weight: bolder;
+	padding-bottom: 1rem;
+
+}
+
+i.fas.fa-chart-line{
+
+	   font-size: larger;
+       color: black;
+}
+
+#mainContent div.wrapper-grid{
+
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    gap: 18px;
+
+}
+
+#mainContent div.row{
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 36px;
+}
+
+#mainContent aside header{
+
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	font-family: 'Raleway';
+	font-size:larger;
+	font-weight: bolder;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+.card{
+
+	overflow: hidden;
+	box-shadow: 1px 4px #f2f2f2;
+	border-radius: 1rem;
+	/*display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;*/
+	cursor: pointer;
+	/*ease-in - specifies a transition effect with a slow start*/
+	transition: transform 200ms ease-in;
+	/*Transition effects are animation options*/
+}
+
+.card2{
+	display: grid;
+	gap: 1rem;
+	background: blue;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 0.8fr);
+	margin-bottom: 3rem;
+}
+
+.card2 div.card__body{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+#mainContent div.card img {
+
+    height: 120px;
+    object-fit: cover;
+}
+
+/*--------Additional content--------*/
+
+
+
+#additionalContent{
+
+	/*background: cornflowerblue; Added this color just for testing */
+	background-color: #ffffff;
+	padding: 0px 20px;	
+	/*grid-template-columns: repeat(auto-fit, minmax(12rem,16rem));*/
+	
+}
+
+#additionalContent div.row{
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 36px;
+	grid-template-rows: repeat(2, 5vw)
+	
+}
+
+#additionalContent div.row img{	
+
+	object-fit: cover;
+
+}
+
+#additionalContent div.card1{
+	grid-column: 1;
+    grid-row: 1;
+   
+}
+
+#additionalContent div.card2{
+	grid-column: 2;
+    grid-row:1;
+    
+	
+}
+
+#additionalContent div.card3{
+	
+	grid-column: 2;
+    grid-row: 4;
+   
+}
+
+#additionalContent div.card4{
+    
+}
+
+#additionalContent div.card5{
+	grid-column: 4;
+    grid-row: 1;
+}
+
+#additionalContent div.card6{
+	grid-column: 4;
+    grid-row: 4;
+}
+
+.responsive1{
+
+	height: 396px;
+}
+
+.responsive2{
+
+	height:180px;
+}
+
+.responsive3{
+
+	height:90px
+}
+
+.responsive4{
+
+	height: 396px;
+}
+
+.responsive5{
+
+	height:144px;
+}
+
+.responsive6{
+
+	height:144px;
+}
+
+.responsive{
+	height:100%;
+}

@@ -29,6 +29,10 @@ body {
 
 }
 
+b{
+
+	color: black;
+}
 
 ul {
 	/*I want to remove all the bullet points */
@@ -59,7 +63,7 @@ h1 {
 	
 	color: black;
 	font-size: larger;
-	padding:1rem;
+	padding: 1rem 0 1rem 2rem;
 	/*I want to have a padding for my titles on the top and bottom */
 }
 
@@ -72,12 +76,14 @@ h2{
 
 h3{
 	color: black;
-	font-size: large;
-	font-weight: bold;
+	font-size: larger;
+	font-weight: bolder;
+	font-family:'Raleway', sans-serif;
 }
 
 p{
 	font-size: medium;
+	padding-bottom: 0.5rem;
 }
 
 
@@ -118,7 +124,7 @@ définir cinq selecteurs pour mes cinq zones*/
 #header ul li:last-child a{
 
 	color:#0065fc;
-	font-weight: bold!important;
+	font-weight: bolder!important;
 }
 
 #header ul{
@@ -173,27 +179,29 @@ définir cinq selecteurs pour mes cinq zones*/
 }
 
 
+
 /*---------mainNav----------*/
 
 
 #mainNav{
 
 	background-color: #ffffff;
-	padding-bottom:2rem; /* top, right, bottom, left */
+	/* top, right, bottom, left */
 	/*border: 2px solid black;*/
-	height: 278px;
+	
 }
 
 #mainNav header{
 	
 	/*border: 2px solid red;*/
 	padding-bottom: 1rem;
-	padding-top:0.75rem;
+	padding-top:1rem;
 }
 
 #mainNav header h2{
 
 	padding-top: 1rem;
+	padding-bottom:0.5rem;
 	color: black;
 	font-weight: bold;
 	font-size: larger;
@@ -207,16 +215,16 @@ définir cinq selecteurs pour mes cinq zones*/
 #mainNav div.search{
 
 	/*border: 2px solid green;*/
-	padding-bottom: 1.5rem;
-	padding-top:0.25rem;
+	padding-bottom: 0.75rem;
+	/*padding-top:0.5rem;*/
 	
 }
 
 #mainNav nav{
 
 	/*border: 2px solid blue;*/
-	padding-bottom: 3rem;
-	padding-top: 1rem;
+	padding-bottom: 2.5rem;
+	padding-top: 0.5rem;
 
 }
 
@@ -327,6 +335,7 @@ form.search-form button.Rechercher{
   }
 
 
+
 /*------mainNav buttons-------*/
 
 .button-group{
@@ -355,11 +364,17 @@ form.search-form button.Rechercher{
 
 .fa-info-circle:before{
 
-	background-color:#0065fc;
-	color: #ffffff;
+	
+	margin-right: 10px;
+	color: #0065fc;
+    background-color: #f2f2f2;
+    border-radius: 22px;
+    padding: 10px;
+    border: 2px solid #F2F2F2;
 }
 
 #mainNav#text{
+
 	font-weight: bold;
 	color: black;
 }
@@ -367,42 +382,94 @@ form.search-form button.Rechercher{
 
 /*----------mainContent-----------*/
 
+#mainContent div.wrapper-grid{
+
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+	grid-template-rows: 1fr 1fr 0.1fr;
+    gap: 30px;
+	justify-content: center;
+	padding: 0 20px;
+	
+}
+
+#mainContent div.aside-container{
+
+	display: grid;
+	grid-template-rows: 0.7fr 0.7fr 0.7fr;
+	grid-template-columns: 0.85fr;
+	justify-content: center;
+	gap: 35px;
+
+	
+}
+
+#mainContent div.row{
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 36px;
+}
+
 .card{
 
 	overflow: hidden;
 	box-shadow: 0px 2px #f2f2f2;
-	border-radius: 1rem;
-	display: flex;
+	border-radius: 2rem;
+	border: 6px solid white;
+	/*display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-between;*/
 	cursor: pointer;
 	/*ease-in - specifies a transition effect with a slow start*/
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
+	background: #ffffff;
 }
 
 
+
+#hebergements div.card img{
+
+	height: 135px;
+	
+}
+
+.wrapper-grid h2{
+
+padding: 0.5rem 1rem 0.2rem 1rem;
+
+}
+
+.wrapper-grid div.card__description{
+
+	padding-bottom: 0.2rem 0;
+}
+
+
+/*
 .card img{
 
 	height: 12rem;
-	width: 100%;
 	object-fit: cover;
 }
-
+*/
+/*
 .card__title{
 
 	padding: 1rem;
     background-color: #ffffff;
 }
+*/
 
 .card__description{
 
-	padding: 0 1rem;
+	padding: 0.2rem 1rem;
     background-color: #ffffff;
 }
 
-.card div.card__body:hover{
+.card__body:hover{
 
 	transform:scale(1.02);
 }
@@ -410,39 +477,117 @@ form.search-form button.Rechercher{
 
 #mainContent {
 
-	margin-top: 54px;	
-	
+	margin-top: 40px;	
+	/*border: 2px solid blue;*/
+		
 }
+ 
+
+
 
 #mainContent aside{
 
 	background-color: #f2f2f2 ;
 	/*padding: la marge intérieure vs margin: la marge extérieure*/
-	padding: 0px 20px; /*0 en haut et en bas et 20px à droite et à gauche*/
-	border-radius: 22px;	
+	padding: 2rem 20px 0px 20px; /*0 en haut et en bas et 20px à droite et à gauche OU top right bottom left */
+	border-radius: 22px;
+	/*	
 	grid-template-columns: repeat(auto-fit, minmax(12rem,16rem));
 	grid-gap:2rem;
 	justify-content: center;
+	*/
+	
 }
 
+.aside-container div.card img{
+
+	height: 230px;
+	width: 40%;
+	object-fit: cover;
+	
+	
+}
+
+.aside-container div.card__body{
+
+	display: flex;
+}
+
+.aside-container div.card__description h3{
+
+	padding-bottom: 0.5rem;
+}
+
+.aside-container div.card__description p{
+
+	padding-bottom: 3rem;
+}
+
+#mainContent aside header{
+
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	font-family: 'Raleway';
+	font-size:larger;
+	font-weight: bolder;
+	padding-bottom: 0.6rem;
+	
+}
+
+/*
 #mainContent div.row{
 
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+    gap: 3em;
+
 }
 
+#mainContent div.row > section{
+
+	flex: 1 1 60%;
+}
+
+*/
 
 #mainContent section{
 
 	background-color:#f2f2f2;
 	padding: 0px 20px;
 	border-radius: 22px;	
+	/*
 	grid-template-columns: repeat(auto-fit, minmax(12rem,16rem));
 	grid-gap:2rem;
-	justify-content: center;
+	justify-content: center;*/
+	
 
 }
 
+#mainContent section header{
+
+	padding-top: 2rem;
+	font-family: 'Raleway';
+	font-size: larger;
+	font-weight: bolder;
+	padding-bottom: 0.6rem;
+
+}
+
+.Afficher h2{
+
+	padding: 0 2rem 2rem 1rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bolder;
+	
+
+}
+
+i.fas.fa-chart-line{
+
+	   font-size: larger;
+       color: black;
+	   margin-right: 2rem;
+}
 
 /*--------Additional content--------*/
 
@@ -450,13 +595,206 @@ form.search-form button.Rechercher{
 
 #additionalContent{
 
-	background-color: #ffffff;
-	padding: 0px 20px;	
-	grid-template-columns: repeat(auto-fit, minmax(12rem,16rem));
-	grid-gap:2rem;
-	justify-content: center;
+	background: cornflowerblue;/*Added this color just for testing */
+	/*background-color: #ffffff;*/
+	padding: 0px 20px 60px 20px;
+			/*top right bottom left*/
+	/*grid-template-columns: repeat(auto-fit, minmax(12rem,16rem));*/
+	
 }
 
+#additionalContent div.row{
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 36px;
+	grid-template-rows: repeat(2, 7vw); /*vw = viewport */
+	
+}
+
+
+
+#additionalContent div.card1{
+	grid-column: 1;
+    grid-row-start: 1;
+	grid-row-end: 4;
+	/*border: none;*/
+	overflow: hidden;
+	box-shadow: 0px 2px #f2f2f2;
+	border-radius: 2rem;
+	border: 6px solid black;
+	/*display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;*/
+	cursor: pointer;
+	/*ease-in - specifies a transition effect with a slow start*/
+	transition: transform 200ms ease-in;
+	/*Transition effects are animation options*/
+	background: #ffffff;
+
+   
+}
+
+#additionalContent div.card2{
+
+	grid-column: 2;
+    grid-row-start: 1;
+	grid-row-end: 3;
+	/*border: none;*/
+	overflow: hidden;
+	box-shadow: 0px 2px #f2f2f2;
+	border-radius: 2rem;
+	border: 6px solid black;
+	/*display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;*/
+	cursor: pointer;
+	/*ease-in - specifies a transition effect with a slow start*/
+	transition: transform 200ms ease-in;
+	/*Transition effects are animation options*/
+	background: #ffffff;
+
+    
+	
+}
+
+#additionalContent div.card3{
+	
+	grid-column: 2;
+    grid-row-start: 3;
+	grid-row-end: 4;
+	/*border: none;*/
+	overflow: hidden;
+	box-shadow: 0px 2px #f2f2f2;
+	border-radius: 2rem;
+	border: 6px solid black;
+	/*display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;*/
+	cursor: pointer;
+	/*ease-in - specifies a transition effect with a slow start*/
+	transition: transform 200ms ease-in;
+	/*Transition effects are animation options*/
+	background: #ffffff;
+
+   
+}
+
+#additionalContent div.card4{
+
+ 	 grid-column:3 ; 
+ 	 grid-row-start: 1; 
+	 grid-row-end: 4;
+	 /*border: none;*/
+	overflow: hidden;
+	box-shadow: 0px 2px #f2f2f2;
+	border-radius: 2rem;
+	border: 6px solid black;
+	/*display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;*/
+	cursor: pointer;
+	/*ease-in - specifies a transition effect with a slow start*/
+	transition: transform 200ms ease-in;
+	/*Transition effects are animation options*/
+	background: #ffffff;
+ 
+}
+
+#additionalContent div.card5{
+
+	grid-column: 4;
+	grid-row-start: 1; 
+	grid-row-end: 3;
+	/*border: none;*/
+	overflow: hidden;
+	box-shadow: 0px 2px #f2f2f2;
+	border-radius: 2rem;
+	border: 6px solid black;
+	/*display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;*/
+	cursor: pointer;
+	/*ease-in - specifies a transition effect with a slow start*/
+	transition: transform 200ms ease-in;
+	/*Transition effects are animation options*/
+	background: #ffffff;
+
+}
+
+#additionalContent div.card6{
+
+	grid-column: 4;
+	grid-row-start: 3; 
+	grid-row-end: 4;
+	/*border: none;*/
+	overflow: hidden;
+	box-shadow: 0px 2px #f2f2f2;
+	border-radius: 2rem;
+	border: 6px solid black;
+	/*display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;*/
+	cursor: pointer;
+	/*ease-in - specifies a transition effect with a slow start*/
+	transition: transform 200ms ease-in;
+	/*Transition effects are animation options*/
+	background: #ffffff;
+
+}
+
+
+#additionalContent header{
+
+	padding-top: 2rem;
+	font-family: 'Raleway';
+	font-size:larger;
+	font-weight: bolder;
+
+}
+
+#additionalContent div.row img{
+
+	object-fit: cover;
+	/*The object fit property only works if we set the width and height properties.*/
+
+}
+
+.responsive1{
+
+	height: 396px;
+}
+
+.responsive2{
+
+	height:180px;
+}
+
+.responsive3{
+
+	height:90px
+}
+
+.responsive4{
+
+	height: 396px;
+}
+
+.responsive5{
+
+	height:144px;
+}
+
+.responsive6{
+
+	height:144px;
+}
 
 /*-----------footer-------------*/
 
@@ -473,8 +811,9 @@ form.search-form button.Rechercher{
     justify-content: start;
     flex-wrap: wrap;
     align-items: start;  
-    height: 250px;
+    /*height: 250px;*/
     flex-direction: row;
+	padding-bottom: 2.5rem;
 }
 
 .footer section{
@@ -491,7 +830,7 @@ form.search-form button.Rechercher{
 
 .footer section ul li{
 
-	padding:0.5rem;
+	padding: 0.5rem;
 }
 
 /*------STARS----------*/
@@ -503,7 +842,7 @@ form.search-form button.Rechercher{
 
    .fa-star {
 
-	color: #f2f2f2;
+	color: rgba(242,242,242, 1);
 	padding: 0.0625rem;
     }
 
@@ -515,18 +854,20 @@ form.search-form button.Rechercher{
 
 /* Le groupe '.stars' positionne les étoiles
 les unes à côté des autres sans espacements. */
-#stars {
+.stars {
 		display: inline-flex;
 		justify-content: center;
 		font-size: 1em;
+		padding-bottom: 0.5rem;
+		opacity: 1;
 	}
 
 
 
-/*---------END OF @media 1024-----------------------------------------------------------------------------------------------------------------------*/
+/*---------END OF @media 1480-----------------------------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 	{
 		/* Vos règles CSS pour les mobiles ici 
 		Les périphériques mobiles ne dépassant pas 480 px de large*/
@@ -544,6 +885,7 @@ les unes à côté des autres sans espacements. */
         #header img{
 
 	    max-width: 48.78%;
+
         }
 
         #header ul{
@@ -596,12 +938,12 @@ les unes à côté des autres sans espacements. */
          .footer div.container{
 
         display: flex;
-        justify-content: start;
+        justify-content:center;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        height: 198px;
-   
+       
+		flex-direction: column;
     
        }
 
@@ -609,7 +951,7 @@ les unes à côté des autres sans espacements. */
     }
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
-@media all and (max-device-width: 768px)
+@media all and (max-width: 768px)
 	{
 		
         .wrapper{
@@ -631,6 +973,20 @@ les unes à côté des autres sans espacements. */
 		form.search-form button.search_icon{
 			display:initial;
 		}
+
+		/*----------footer--------------*/
+
+		.footer div.container{
+
+			display: flex;
+			justify-content: start;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			
+			flex-direction: column;
+		
+		   }
         
 	}	
 
@@ -645,6 +1001,20 @@ les unes à côté des autres sans espacements. */
             je vais définir une marge égale à 0 en haut et en bas et auto à droite et à gauche*/
             
         }
+
+		/*----------footer--------------*/
+
+		.footer div.container{
+
+			display: flex;
+			justify-content: start;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			
+			flex-direction: column;
+		
+		   }
 
     }
 
