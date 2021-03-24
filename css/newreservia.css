@@ -8,6 +8,21 @@ MA PALETTE DE COULEURS :
  couleurTextemainNAv #606060 	rgb(96,96,96)
 */
 
+/*Mes variables pour les couleurs*/
+:root{
+
+	--text-color:#606060;
+	--title-color:#000000;
+	--link-active-color: #0065fc;
+	--section-background-color: #DEEBFF;
+	--body-background-color: #ffffff;
+	--header-text-color: #404040;
+	--link-focus-color: #609ffd;
+	--mainNav-link-border-color: #e0e0e0;
+	--icon-border-color: #F2F2F2;
+
+}
+
 /*Je commence tout d'abord par la version pour Desktop, comme je veux que ca reste fluide, 
 quand la taille de l'écran change, je vais définir une largeur maximum et non pas juste une largeur */
 
@@ -23,15 +38,15 @@ quand la taille de l'écran change, je vais définir une largeur maximum et non 
 
 body {
 
-	background-color: #ffffff;
-	font-family: Raleway;
-	color: #606060;	
+	background-color: var(--body-background-color);
+	font-family: 'Raleway', sans-serif;
+	color: var(--text-color);	
 
 }
 
 b{
 
-	color: black;
+	color: var(--title-color);
 }
 
 ul {
@@ -45,8 +60,8 @@ a {
 	/*I want to remove my underlines*/
 	text-decoration: none;
 	/*I want to change the color of my links to have the same color as the text */
-	color: #606060;
-	font-family: 'Raleway';
+	color: var(--text-color);
+	font-family: 'Raleway', sans-serif;
 
 
 }
@@ -54,36 +69,39 @@ a {
 /*I created two 'button' classes to remove hover effect from logo*/
 .button:hover, .button-group a:hover{
 
-	background-color: #DEEBFF ;
+	background-color: var(--section-background-color) ;
 	
 }
 
 
 h1 {
 	
-	color: black;
+	color: var(--title-color);
 	font-size: larger;
-	padding: 1rem 0 1rem 2rem;
+	font-weight: 800;
+	 /*rem units depend on the body's font-size, so if a font-size is not defined, the default is 16px so 1rem=16px */
+	padding: 1rem 0 1rem 2rem; 
 	/*I want to have a padding for my titles on the top and bottom */
 }
 
 
 h2{
-	color: black;
+	color: var(--title-color);
 	font-size: larger;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 h3{
-	color: black;
-	font-size: larger;
-	font-weight: bolder;
+	color: var(--title-color);
+	font-size: large;
+	font-weight: 700;
 	font-family:'Raleway', sans-serif;
 }
 
 p{
 	font-size: medium;
-	padding-bottom: 0.5rem;
+	font-weight: 600;
+    font-size: large;
 }
 
 
@@ -97,8 +115,9 @@ img {
 .wrapper{
 
 	max-width: 1480px; /*Un point d'arrêt fluide */
-	margin: 0px auto;; /*Pour centrer les éléments: 
-	je vais définir une marge égale à 0 en haut et en bas et auto à droite et à gauche*/
+	min-width: 1280px;
+	margin: 0px 22px;; /*Pour centrer les éléments: 
+	je vais définir une marge égale à 0 en haut et en bas et 22px à droite et à gauche*/
 	
 }
 
@@ -113,7 +132,7 @@ définir cinq selecteurs pour mes cinq zones*/
 
 #header{
 
-	background-color: #ffffff;
+	background-color: var(--body-background-color);
 	padding: 0px 0px; /*On a 0 en haut et en bas et 20 a droite et a gauche */
 	padding-top: 0px;
 	margin-top: 0px;	
@@ -123,7 +142,7 @@ définir cinq selecteurs pour mes cinq zones*/
 
 #header ul li:last-child a{
 
-	color:#0065fc;
+	color: var(--link-active-color);
 	font-weight: bolder!important;
 }
 
@@ -138,25 +157,26 @@ définir cinq selecteurs pour mes cinq zones*/
 #header ul li{
 
 	display: flex;
-	font-family: Raleway, Verdana, sans-serif;	
-	margin-right: 2rem;
+	font-family: 'Raleway', sans-serif;	
+	margin-right: 5.5rem;
 	
 }
 
 #header ul li a{
 
 	display: flex;
-	font-family: Raleway, Verdana, sans-serif;
-	color: #404040;
+	font-family: 'Raleway', sans-serif;
+	color: var(--header-text-color);
 	padding-top: 2rem;
+	font-weight: 600;
 	
 }
 
 #header ul li a:focus {
 
     border-bottom: none;
-    border-top: solid 2px #609ffd;
-    color: #609ffd;
+    border-top: solid 2px var(--link-focus-color);
+    color: var(--link-focus-color);
     margin-top: 0%;
 }
 
@@ -169,7 +189,7 @@ définir cinq selecteurs pour mes cinq zones*/
 
 #header img{
 
-    max-width: 30.75%;
+    max-width: 28%;
 }
 
 
@@ -185,7 +205,7 @@ définir cinq selecteurs pour mes cinq zones*/
 
 #mainNav{
 
-	background-color: #ffffff;
+	background-color: var(--body-background-color);
 	/* top, right, bottom, left */
 	/*border: 2px solid black;*/
 	
@@ -195,21 +215,21 @@ définir cinq selecteurs pour mes cinq zones*/
 	
 	/*border: 2px solid red;*/
 	padding-bottom: 1rem;
-	padding-top:1rem;
+	padding-top: 1rem;
 }
 
 #mainNav header h2{
 
 	padding-top: 1rem;
 	padding-bottom:0.5rem;
-	color: black;
-	font-weight: bold;
-	font-size: larger;
+	color: var(--title-color);
+	font-weight: 800;
+	font-size: x-large;
 }
 
 #mainNav header p{
 
-	font-weight: bold;
+	font-weight: 700;
 }
 
 #mainNav div.search{
@@ -230,20 +250,28 @@ définir cinq selecteurs pour mes cinq zones*/
 
 #mainNav ul li a{
 
-	padding: 0.75rem 1rem 0.75rem 0; /* top, right, bottom, left */
-	margin-left:1.5rem;
+	padding: 0.75rem 2rem 0.75rem 0;
+	/* top, right, bottom, left */
+	margin-left: 1.5rem;
 	font-family: 'Raleway', sans-serif;
-	color: black;
-	font-weight: bolder;
+	color: var(--title-color);
+	font-weight: 800; 
+	/*font-weight & font-size : the text after the icons*/
 	font-size: large;
+	border-top: 3px solid var(--mainNav-link-border-color);
+	border-right: 3px solid var(--mainNav-link-border-color);
+	border-bottom: 3px solid var(--mainNav-link-border-color);
+	border-radius: 27px;
+	
+	padding-right: 1.5rem;
 }
 
 
 
 .fas fa-search{
 
-	background-color:#0065fc;
-	color: #ffffff;
+	background-color: var(--link-active-color);
+	color: var(--body-background-color);
 	font-size: 32pt ;
 	width: 50px;
 	height: 50px;
@@ -251,53 +279,59 @@ définir cinq selecteurs pour mes cinq zones*/
 }
 
 .fa-money-bill-wave:before, .fa-child:before, .fa-heart:before, .fa-dog:before{
+	/*this part describes the icon before the text*/
 
-	color: #0065fc;
-	background-color:#DEEBFF;
-	border-radius: 22px;
-	padding:13px;
-	border: 2px solid #F2F2F2;
+	color: var(--link-active-color);
+	background-color: var(--section-background-color);
+	border-radius: 25px;
+	padding: 15px;
+	border: 2px solid var(--icon-border-color);
+	font-size: large;
 	
 }
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
 
 	padding: 1rem 1rem 1rem 0;
-	font-weight: bolder;
-	color: black;
+	
 }
 
 .fa:after, .far:after, .fas:after{
 
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
+
 }
 
 form.search-form button.search_icon{
 
-    display:none;
+    display: none;
 }
 
 form.search-form button.Rechercher{
 
     display: initial;
-    background-color: #0065FC;
+    background-color: var(--link-active-color);
     border-radius: 1px 17px 17px 1px;
-    padding: 15px 25px;
-    color: white;
+    padding: 15px 20px;
+    color: var(--body-background-color);
     font-size: medium;
-    border: 2px solid #0065FC;
+    border: 2px solid var(--link-active-color);
+	font-size: large;
+    font-weight: 600;
 }
 
-#mainNav form i{
+i.fas.fa-map-marker-alt {
 	
     border-radius: 13px 1px 1px 13px;
-    border: 2px solid #f2f2f2;
+    border: 2px solid var(--icon-border-color);
     margin: 0;
-    font-weight: bold;
-    padding: 15px;
-    background-color: #f2f2f2;
-    color: black;
+	font-size: larger;
+    padding: 17px;
+    background-color: var(--icon-border-color);
+    color: var(--title-color);
 }
+
+
 
 .search-form{
 
@@ -308,7 +342,7 @@ form.search-form button.Rechercher{
 #site-search{
 
     padding: 15px;
-    border: 2px solid #F2F2F2;
+    border: 2px solid var(--icon-border-color);
     font-weight: bold;
     font-size: medium;
 
@@ -316,22 +350,28 @@ form.search-form button.Rechercher{
 
 ::placeholder {
 
-    color: black;
-	font-weight: bolder;
+    color: var(--title-color);
+	font-weight: 800;
+	font-size:larger;
     opacity: 1; /* Firefox */
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
+	margin-right: 0px;
   }
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: black;
-   font-weight: bolder;
-   font-family: 'Raleway';
+   color: var(--title-color);
+   font-weight: 800;
+   font-size:larger;
+   font-family: 'Raleway', sans-serif;
+   margin-right: 0px;
   }
   
 ::-ms-input-placeholder { /* Microsoft Edge */
-   color: black;
-   font-weight: bolder;
-   font-family: 'Raleway';
+   color: var(--title-color);
+   font-weight: 800;
+   font-size:larger;
+   font-family: 'Raleway', sans-serif;
+   margin-right: 0px;
   }
 
 
@@ -348,36 +388,24 @@ form.search-form button.Rechercher{
 	
 }
 
+i.fas.fa-info-circle::after{
 
-.button-group li a{
-	
-	font-weight: bold!important;
-	border-top: 2px double #f2f2f2;
-	border-right: 2px double #f2f2f2;
-	border-bottom: 2px double #f2f2f2;
-	border-radius: 22px;
-	margin: 10px 10px 10px 0;
-	font-weight: bold; 
-	padding-right: 5px;
-
+	background-color: var(--icon-border-color);
 }
 
-.fa-info-circle:before{
+i.fas.fa-info-circle::before{
 
 	
-	margin-right: 10px;
-	color: #0065fc;
-    background-color: #f2f2f2;
+	margin-right: 13px;
+	color: var(--body-background-color);
+    background: var(--link-active-color);
     border-radius: 22px;
-    padding: 10px;
-    border: 2px solid #F2F2F2;
+    border: 2px solid var(--icon-border-color);
+	font-size: x-large;
 }
 
-#mainNav#text{
 
-	font-weight: bold;
-	color: black;
-}
+
 
 
 /*----------mainContent-----------*/
@@ -385,22 +413,24 @@ form.search-form button.Rechercher{
 #mainContent div.wrapper-grid{
 
     display: grid;
-    grid-template-columns: repeat(3, 0.5fr);
-	grid-template-rows: 1fr 1fr 0.1fr;
+    grid-template-columns: repeat(3, 0.4fr);
+	grid-template-rows: 3fr 3fr 0.01fr;
     gap: 30px;
 	justify-content: center;
 	padding: 0 20px;
+	grid-area: wrapper-grid;
+	/*height: calc(70vh - 0px);*/
 	
 }
 
 #mainContent div.aside-container{
 
 	display: grid;
-	grid-template-rows: 0.7fr 0.7fr 0.7fr;
-	grid-template-columns: 0.85fr;
+	grid-template-rows: 0.7fr 0.7fr 0.7fr 0.01fr;
+	grid-template-columns: 0.9fr;
 	justify-content: center;
-	gap: 35px;
-
+	gap: 40px;
+	grid-area: aside;
 	
 }
 
@@ -414,9 +444,10 @@ form.search-form button.Rechercher{
 .card{
 
 	overflow: hidden;
-	box-shadow: 0px 2px #f2f2f2;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	/*box-shadow: 10px 5px 5px var(--icon-border-color);*/
 	border-radius: 2rem;
-	border: 6px solid white;
+	border: 6px solid var(--body-background-color);
 	/*display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -425,26 +456,125 @@ form.search-form button.Rechercher{
 	/*ease-in - specifies a transition effect with a slow start*/
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
-	background: #ffffff;
+	background: var(--body-background-color);
+	min-height: 215px;
 }
+
+.wrapper-grid div.card__body.aubergeLaCannebiere{
+
+	background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+	object-fit:cover;
+	height:60%;
+	position: relative;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: 260px;
+    background-position: top;
+	/*border: 2px solid black;*/
+}
+
+
+.wrapper-grid div.card__body.hotelDuPort{
+
+	background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+	object-fit:cover;
+	height:60%;
+	position: relative;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: 260px;
+    background-position: top;
+	/*border: 2px solid black;*/
+}
+
+
+.wrapper-grid div.card__body.hotelLesMouettes{
+
+	background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+	object-fit:cover;
+	height:60%;
+	position: relative;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: 260px;
+    background-position: top;
+	/*border: 2px solid black;*/
+}
+
+.wrapper-grid div.card__body.hotelDeLaMer{
+
+	background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+	object-fit:cover;
+	height:60%;
+	position: relative;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: 260px;
+    background-position: top;
+	/*border: 2px solid black;*/
+}
+
+.wrapper-grid div.card__body.aubergeLePanier{
+
+	background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+	object-fit:cover;
+	height:60%;
+	position: relative;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: 260px;
+    background-position: top;
+	/*border: 2px solid black;*/
+}
+
+.wrapper-grid div.card__body.hotelChezAmina{
+
+	background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+	object-fit:cover;
+	height:60%;
+	position: relative;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: 260px;
+    background-position: top;
+	/*border: 2px solid black;*/
+}
+
 
 
 
 #hebergements div.card img{
 
-	height: 135px;
+	height: 120px;
 	
 }
 
-.wrapper-grid h2{
+.wrapper-grid h3{
 
 padding: 0.5rem 1rem 0.2rem 1rem;
+background: var(--body-background-color);
+position: relative;
+top: 120px;
 
+}
+
+.wrapper-grid p{
+
+	font-size: medium;
+	padding-bottom: 0.5rem;
 }
 
 .wrapper-grid div.card__description{
 
 	padding-bottom: 0.2rem 0;
+	position: relative;
+    top: 120px;
 }
 
 
@@ -466,7 +596,7 @@ padding: 0.5rem 1rem 0.2rem 1rem;
 .card__description{
 
 	padding: 0.2rem 1rem;
-    background-color: #ffffff;
+    background-color: var(--body-background-color);
 }
 
 .card__body:hover{
@@ -487,7 +617,7 @@ padding: 0.5rem 1rem 0.2rem 1rem;
 
 #mainContent aside{
 
-	background-color: #f2f2f2 ;
+	background-color: var(--icon-border-color) ;
 	/*padding: la marge intérieure vs margin: la marge extérieure*/
 	padding: 2rem 20px 0px 20px; /*0 en haut et en bas et 20px à droite et à gauche OU top right bottom left */
 	border-radius: 22px;
@@ -501,7 +631,7 @@ padding: 0.5rem 1rem 0.2rem 1rem;
 
 .aside-container div.card img{
 
-	height: 230px;
+	height: 200px;
 	width: 40%;
 	object-fit: cover;
 	
@@ -514,13 +644,15 @@ padding: 0.5rem 1rem 0.2rem 1rem;
 }
 
 .aside-container div.card__description h3{
-
+	font-size: large;
 	padding-bottom: 0.5rem;
+	padding-top: 1rem;
 }
 
 .aside-container div.card__description p{
 
-	padding-bottom: 3rem;
+	padding-bottom: 1.5rem;
+	font-size: medium;
 }
 
 #mainContent aside header{
@@ -528,7 +660,7 @@ padding: 0.5rem 1rem 0.2rem 1rem;
 	display:flex;
 	justify-content: space-between;
 	align-items:center;
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 	font-size:larger;
 	font-weight: bolder;
 	padding-bottom: 0.6rem;
@@ -552,7 +684,7 @@ padding: 0.5rem 1rem 0.2rem 1rem;
 
 #mainContent section{
 
-	background-color:#f2f2f2;
+	background-color: var(--icon-border-color);
 	padding: 0px 20px;
 	border-radius: 22px;	
 	/*
@@ -566,7 +698,7 @@ padding: 0.5rem 1rem 0.2rem 1rem;
 #mainContent section header{
 
 	padding-top: 2rem;
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 	font-size: larger;
 	font-weight: bolder;
 	padding-bottom: 0.6rem;
@@ -575,17 +707,25 @@ padding: 0.5rem 1rem 0.2rem 1rem;
 
 .Afficher h2{
 
-	padding: 0 2rem 2rem 1rem;
+	padding: 0 2rem 2.5rem 1rem;
 	font-family: 'Raleway', sans-serif;
-	font-weight: bolder;
-	
+	font-weight: 800;
+	/*border: 2px solid black;*/
+
+}
+
+.Afficher{
+
+	/*border: 2px solid black;*/
+	position: static;
 
 }
 
 i.fas.fa-chart-line{
 
-	   font-size: larger;
-       color: black;
+	   font-size: x-large;
+	   font-weight: 900;
+       color: var(--title-color);
 	   margin-right: 2rem;
 }
 
@@ -595,8 +735,8 @@ i.fas.fa-chart-line{
 
 #additionalContent{
 
-	background: cornflowerblue;/*Added this color just for testing */
-	/*background-color: #ffffff;*/
+	/*background: cornflowerblue;Added this color just for testing */
+	background-color: var(--body-background-color);
 	padding: 0px 20px 60px 20px;
 			/*top right bottom left*/
 	/*grid-template-columns: repeat(auto-fit, minmax(12rem,16rem));*/
@@ -606,7 +746,7 @@ i.fas.fa-chart-line{
 #additionalContent div.row{
 
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 0.5fr);
 	gap: 36px;
 	grid-template-rows: repeat(2, 7vw); /*vw = viewport */
 	
@@ -615,14 +755,15 @@ i.fas.fa-chart-line{
 
 
 #additionalContent div.card1{
+
 	grid-column: 1;
     grid-row-start: 1;
 	grid-row-end: 4;
 	/*border: none;*/
 	overflow: hidden;
-	box-shadow: 0px 2px #f2f2f2;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 2rem;
-	border: 6px solid black;
+	/*border: 6px solid black;*/
 	/*display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -631,7 +772,7 @@ i.fas.fa-chart-line{
 	/*ease-in - specifies a transition effect with a slow start*/
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
-	background: #ffffff;
+	background: var(--body-background-color);
 
    
 }
@@ -643,9 +784,9 @@ i.fas.fa-chart-line{
 	grid-row-end: 3;
 	/*border: none;*/
 	overflow: hidden;
-	box-shadow: 0px 2px #f2f2f2;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 2rem;
-	border: 6px solid black;
+	/*border: 6px solid black;*/
 	/*display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -654,7 +795,7 @@ i.fas.fa-chart-line{
 	/*ease-in - specifies a transition effect with a slow start*/
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
-	background: #ffffff;
+	background: var(--body-background-color);
 
     
 	
@@ -667,9 +808,9 @@ i.fas.fa-chart-line{
 	grid-row-end: 4;
 	/*border: none;*/
 	overflow: hidden;
-	box-shadow: 0px 2px #f2f2f2;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 2rem;
-	border: 6px solid black;
+	/*border: 6px solid black;*/
 	/*display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -678,7 +819,7 @@ i.fas.fa-chart-line{
 	/*ease-in - specifies a transition effect with a slow start*/
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
-	background: #ffffff;
+	background: var(--body-background-color);
 
    
 }
@@ -690,9 +831,9 @@ i.fas.fa-chart-line{
 	 grid-row-end: 4;
 	 /*border: none;*/
 	overflow: hidden;
-	box-shadow: 0px 2px #f2f2f2;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 2rem;
-	border: 6px solid black;
+	/*border: 6px solid black;*/
 	/*display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -701,7 +842,7 @@ i.fas.fa-chart-line{
 	/*ease-in - specifies a transition effect with a slow start*/
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
-	background: #ffffff;
+	background: var(--body-background-color);
  
 }
 
@@ -712,9 +853,9 @@ i.fas.fa-chart-line{
 	grid-row-end: 3;
 	/*border: none;*/
 	overflow: hidden;
-	box-shadow: 0px 2px #f2f2f2;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 2rem;
-	border: 6px solid black;
+	/*border: 6px solid black;*/
 	/*display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -723,7 +864,7 @@ i.fas.fa-chart-line{
 	/*ease-in - specifies a transition effect with a slow start*/
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
-	background: #ffffff;
+	background: var(--body-background-color);
 
 }
 
@@ -734,9 +875,9 @@ i.fas.fa-chart-line{
 	grid-row-end: 4;
 	/*border: none;*/
 	overflow: hidden;
-	box-shadow: 0px 2px #f2f2f2;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 2rem;
-	border: 6px solid black;
+	/*border: 6px solid black;*/
 	/*display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -745,7 +886,7 @@ i.fas.fa-chart-line{
 	/*ease-in - specifies a transition effect with a slow start*/
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
-	background: #ffffff;
+	background: var(--body-background-color);
 
 }
 
@@ -753,7 +894,7 @@ i.fas.fa-chart-line{
 #additionalContent header{
 
 	padding-top: 2rem;
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 	font-size:larger;
 	font-weight: bolder;
 
@@ -768,7 +909,8 @@ i.fas.fa-chart-line{
 
 .responsive1{
 
-	height: 396px;
+	height: 450px;
+	/*396px*/
 }
 
 .responsive2{
@@ -783,7 +925,7 @@ i.fas.fa-chart-line{
 
 .responsive4{
 
-	height: 396px;
+	height: 450px;
 }
 
 .responsive5{
@@ -811,14 +953,13 @@ i.fas.fa-chart-line{
     justify-content: start;
     flex-wrap: wrap;
     align-items: start;  
-    /*height: 250px;*/
     flex-direction: row;
 	padding-bottom: 2.5rem;
 }
 
 .footer section{
 
-	margin-right: 13%;
+	margin-right: 19%;
 	
 }
 
@@ -842,13 +983,14 @@ i.fas.fa-chart-line{
 
    .fa-star {
 
-	color: rgba(242,242,242, 1);
+	/*color: rgba(242,242,242, 1);*/
+	color:rgba(224,224,224, 1);
 	padding: 0.0625rem;
     }
 
 /* Si elle porte en plus la classe '.blue', elle sera en bleu. */
-.fa-star.blue {
-	color: #0065fc;
+   .fa-star.blue {
+	color: var(--link-active-color);
    }
 
 
@@ -857,8 +999,9 @@ les unes à côté des autres sans espacements. */
 .stars {
 		display: inline-flex;
 		justify-content: center;
-		font-size: 1em;
+		font-size: 0.8em;
 		padding-bottom: 0.5rem;
+		padding-top: 4px;
 		opacity: 1;
 	}
 
@@ -866,15 +1009,18 @@ les unes à côté des autres sans espacements. */
 
 /*---------END OF @media 1480-----------------------------------------------------------------------------------------------------------------------*/
 
+
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media all and (max-width: 480px)
+@media all and (min-width: 480px) and (max-width: 768px)
 	{
 		/* Vos règles CSS pour les mobiles ici 
 		Les périphériques mobiles ne dépassant pas 480 px de large*/
         .wrapper{
-            max-width: 480px; /*Un point d'arrêt fluide */
-            margin: 0px auto;; /*Pour centrer les éléments: 
-            je vais définir une marge égale à 0 en haut et en bas et auto à droite et à gauche*/
+            min-width: 480px;
+			max-width: 768px; /*Un point d'arrêt fluide */
+            margin: 0px 22px; /*Pour centrer les éléments: 
+            je vais définir une marge égale à 0 en haut et en bas et 22px à droite et à gauche*/
             
         }
 
@@ -884,20 +1030,30 @@ les unes à côté des autres sans espacements. */
  
         #header img{
 
-	    max-width: 48.78%;
+	    min-width: 48.78%;
 
         }
 
         #header ul{
 
             margin-top: auto;
+			flex-wrap: wrap;
+			align-items: stretch;
+			flex-direction: row-reverse;
             
         }
 
+		.button{
+
+			align-items:stretch;
+			flex-wrap: wrap;
+			
+
+		}
         #header ul li a:focus {
 
-            border-bottom: solid 3px #609ffd;    
-            color: #0065FC;
+            border-bottom: solid 3px var(--link-focus-color);    
+            color: var(--link-active-color);
         }
 
 
@@ -906,58 +1062,127 @@ les unes à côté des autres sans espacements. */
 
 
         form.search-form button.Rechercher{
-            display:none;
+
+            display: none;
         }
 
 		form.search-form button.search_icon{
+
 			display:initial;
+			border-radius: 13px 15px 15px 13px;
+			border: 2px solid var(--link-active-color);
+			background-color: var(--link-active-color);
+			padding: 15px 16px 16px 15px;
+			color: var(--body-background-color);
+		}
+
+		form.search-form{
+
+			align-self: stretch;
+		}
+
+		#site-search {
+
+			padding: 15px 20px 15px 40px;
+			margin-right: -12px;
+			
 		}
         
-        #mainNav form i{
-	
-            border-radius: 22px;
-            border: 2px solid #f2f2f2;
-            margin: 0;
-            font-weight: bold;
-            padding: 5px;
-            background-color: #f2f2f2;
-        }
+		
 
         /*---------mainContent----------*/
 
 
         #mainContent section{
 
-            background-color: #ffffff;
+            background-color: var(--body-background-color);
     
         }
+
+		#mainContent div.wrapper-grid{
+
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+			gap: 30px;
+			justify-content: center;
+			padding: 0 20px;
+			
+		}
+
+		#mainContent div.row{
+
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-areas: "aside" "wrapper-grid";
+			gap: 36px;
+		}
+
+		#mainContent div.aside-container {
+			
+			/*grid-template-rows: 0.7fr 0.7fr;
+			grid-template-columns: 1fr 1fr;
+			gap: 30px;*/
+			padding-bottom: 30px;
+		}
+
+
+		/*---------additionalContent----------*/
+
+		#additionalContent header {
+
+			padding-bottom: 25px;
+			margin-left: -20px;
+			font-weight: bolder;
+		}
+
+
+		#additionalContent div.row{
+
+			grid-template-columns: 0.8fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+			gap:30px;
+			justify-content: start;
+			
+		}
+
+		#additionalContent div.card1, #additionalContent div.card2, #additionalContent div.card3, #additionalContent div.card4, #additionalContent div.card5, #additionalContent div.card6{
+
+			grid-column:unset;
+            grid-row-start:unset;
+	        grid-row-end:unset;
+		}
+
 
         /*----------footer------------*/
 
 
          .footer div.container{
-
-        display: flex;
-        justify-content:center;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
        
-		flex-direction: column;
+        
+         justify-content:center;        
+        justify-content:center;
+         justify-content:center;        
+        
+         flex-direction: column;
     
        }
+
+	   
+
 
      
     }
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
-@media all and (max-width: 768px)
+@media all and (min-width: 768px) and (max-width: 1024px)
 	{
 		
         .wrapper{
-            max-width: 768px; /*Un point d'arrêt fluide */
-            margin: 0px auto;; /*Pour centrer les éléments: 
-            je vais définir une marge égale à 0 en haut et en bas et auto à droite et à gauche*/
+			min-width: 768px;
+            max-width: 1024px; /*Un point d'arrêt fluide */
+            margin: 0px 22px; /*Pour centrer les éléments: 
+            je vais définir une marge égale à 0 en haut et en bas et 22px à droite et à gauche*/
             
         }
 
@@ -972,50 +1197,213 @@ les unes à côté des autres sans espacements. */
 
 		form.search-form button.search_icon{
 			display:initial;
+			border-radius: 13px 15px 15px 13px;
+			border: 2px solid var(--link-active-color);
+			background-color: var(--link-active-color);
+			padding: 15px 16px 16px 15px;
+			color: var(--body-background-color);
+		}
+		
+		#site-search{
+
+			padding: 15px 0px 15px 15px;
+			border: 2px 0px 2px 2px;
+    		border-top: 2px solid var(--icon-border-color);
+    		border-right: 0px;
+    		border-bottom: 2px solid var(--icon-border-color);
+    		border-left: 2px solid var(--icon-border-color);
+			margin-right: -12px;
 		}
 
-		/*----------footer--------------*/
+		.button-group li a {
 
-		.footer div.container{
+			margin: 5px 5px 5px 0px;
+		}
 
-			display: flex;
-			justify-content: start;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: center;
-			
-			flex-direction: column;
+		.button-group h2{
+
+			font-weight: 900;
+		}
+
 		
+
+		 /*---------mainContent----------*/
+
+
+		#mainContent div.row{
+
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 36px;
+		}
+
+		#mainContent div.wrapper-grid{
+
+			display: grid;
+			grid-template-columns:1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr 0.1fr;
+			gap: 30px;
+			justify-content: center;
+			padding: 0 20px;
+			
+		}
+
+		#mainContent aside header {
+
+			padding-bottom: 1rem;
+			margin-right: 40px;
+			margin-left: 45px;
+		}
+
+		#mainContent div.aside-container {
+
+			grid-template-rows: 0.7fr 0.7fr 0.7fr 0.1fr;
+		}
+
+		
+		/*---------additionalContent----------*/
+		/*
+		#additionalContent header {
+
+			padding-bottom: 30px;
+		}
+
+		#additionalContent div.row{
+
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr 1fr;
+
+			}
+		}
+
+		#additionalContent div.row img{	
+
+			height: 120px;
+			object-fit: cover;
+			width: 100%;
+		}
+		*/
+
+		/*
+		#additionalContent div.card1, #additionalContent div.card2, #additionalContent div.card3, #additionalContent div.card4, #additionalContent div.card5, #additionalContent div.card6{
+
+			grid-column:unset;
+            grid-row-start:unset;
+	        grid-row-end:unset;
+		}
+		*/
+
+		/*----------footer--------------*/
+		/*
+		.footer div.container{		
+			
+				align-items: start;
+ 			    flex-direction: column;
+				
 		   }
-        
+		  
+
+
+		.footer section {
+
+			margin-right: 10%;
+		*/
 	}	
 
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/   
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-@media all  and (min-width: 1024px) and (max-width: 1480px)
+@media all  and (min-width: 1024px) and (max-width: 1280px)
 	{
         .wrapper{
-            max-width: 1480px; /*Un point d'arrêt fluide */
-            margin: 0px auto;; /*Pour centrer les éléments: 
-            je vais définir une marge égale à 0 en haut et en bas et auto à droite et à gauche*/
+			min-width: 1024px;
+            max-width: 1280px; /*Un point d'arrêt fluide */
+            margin: 0px 22px; /*Pour centrer les éléments: 
+            je vais définir une marge égale à 0 en haut et en bas et 22px à droite et à gauche*/
             
         }
 
+		 /*---------mainContent----------*/
+		 #mainContent div.row{
+
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 36px;
+		}
+
+		#mainContent div.wrapper-grid{
+
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr 0.1fr;
+			gap: 30px;
+			justify-content: center;
+			padding: 0 20px;
+			
+		}
+
+		#mainContent div.aside-container {
+			
+			grid-template-rows: 0.7fr 0.7fr;
+			grid-template-columns: 1fr 1fr;
+			gap: 30px;
+			padding-bottom: 30px;
+		}
+
+		aside header h1{
+
+			padding: 1rem 0 1rem 0.5rem;
+		}
+
+		i.fas.fa-chart-line {
+
+			margin-right: 0.5rem;
+		}
+
+		/*---------additionalContent----------*/
+
+
+		#additionalContent header h1{
+
+			padding: 1rem 0 2rem 0.5rem;
+		}
+
+		#additionalContent div.row{
+
+			
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;	
+			
+		}
+
+		.responsive1, .responsive2, .responsive3, .responsive4, .responsive5, .responsive6{
+
+			height: 120px;
+		}
+
+		#additionalContent div.card1, #additionalContent div.card2, #additionalContent div.card3, #additionalContent div.card4, #additionalContent div.card5, #additionalContent div.card6{
+
+			grid-column:unset;
+            grid-row-start:unset;
+	        grid-row-end:unset;
+		}
+
+
+
 		/*----------footer--------------*/
 
-		.footer div.container{
+		.footer section{
 
-			display: flex;
-			justify-content: start;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: center;
+			margin-right: 10%;
+		}
+
+		.footer div.container {
 			
-			flex-direction: column;
-		
-		   }
+			justify-content: initial;
 
+		}
+
+		 
     }
 
 

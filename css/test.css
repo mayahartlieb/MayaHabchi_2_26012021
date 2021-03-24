@@ -41,19 +41,19 @@ h1 {
 	/*I want to have a padding for my titles on the top and bottom */
 }
 
-/*
+
 h2{
 	color: black;
 	font-size: larger;
 	font-weight: bold;
 }
-*/
+
 h3{
 	color: black;
 	font-size: large;
 	font-weight: bold;
 }
-/*
+
 p{
 	font-size: medium;
 }
@@ -81,13 +81,13 @@ les unes à côté des autres sans espacements. */
 		font-size: 1em;
 	}
 
-/*
+
 img {
 
-	/*I want my images to fit in the container
+	/*I want my images to fit in the container*/
 	width: 100%;
 }
-*/
+
 
 .wrapper{
 
@@ -97,7 +97,6 @@ img {
 	
 }
 
-/*
 #mainContent section header, #additionalContent header{
 
 	padding-top: 2rem;
@@ -107,14 +106,13 @@ img {
 	padding-bottom: 1rem;
 
 }
-*/
 
 i.fas.fa-chart-line{
 
 	   font-size: larger;
        color: black;
 }
-/*
+
 #mainContent div.wrapper-grid{
 
     display: grid;
@@ -141,7 +139,7 @@ i.fas.fa-chart-line{
 	padding-top: 2rem;
 	padding-bottom: 1rem;
 }
-/*
+
 .card{
 
 	overflow: hidden;
@@ -150,83 +148,68 @@ i.fas.fa-chart-line{
 	/*display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-between;*/
 	cursor: pointer;
-	/*ease-in - specifies a transition effect with a slow start
+	/*ease-in - specifies a transition effect with a slow start*/
 	transition: transform 200ms ease-in;
-	/*Transition effects are animation options
+	/*Transition effects are animation options*/
 }
-*/
 
+.newCardClass{
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  
 
+}
 
 .card {
-	background-color: rgb(255, 255, 255);
-	border-radius: 4px;
-	display: grid;
-	
-	-moz-box-pack: justify;
-	justify-content: space-between;
-	box-shadow: rgba(12, 15, 20, 0.02) 0px 0px 0px 1px,
-	  rgba(12, 15, 20, 0.06) 0px 0px 1px 0px,
-	  rgba(12, 15, 20, 0.06) 0px 2px 2px 0px;
-	padding: 16px 24px;
-	max-width: 344px;
-	margin: 24px auto;
+	flex-shrink: 0;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+	margin: 25px;
+	border-radius: 5px;
+	width: 300px;
+	height: 550px;
+	background-color: #f1f1f1;
   }
-  
-  @media (min-width: 768px) {
-	.card {
-	  flex-direction: row;
-	  max-width: 700px;
-	}
-  }
-  
-  .image {
-	height: 214px;
-	background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-	background-origin: content-box;
-	background-color: #b2eae8;
-	padding: 16px;
-	margin: -16px -24px 24px;
-	border-radius: 4px 4px 0 0;
-  }
-  
-  @media (min-width: 768px) {
-	.image {
-	  flex-grow: 0;
-	  flex-shrink: 0;
-	  align-self: stretch;
-	  width: 286px;
-	  height: unset;
-	  margin: -16px 24px -16px -24px;
-	  border-radius: 4px 0px 0px 4px;
-	}
-  }
-  
-  .content {
+
+  .card__image {
+	position: relative;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 	width: 100%;
+	height: 60%;
+	background-position: top;
   }
-  
-  h2 {
-	font-family: sans-serif;
-	color: #333333;
-  }
-  
-  p {
-	font-family: sans-serif;
-	color: #333333;
-  }
-  
-  
-/*
 
   .aubergeLaCannebiere {
-	background-image: url('../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+	background-image: url('images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+  }
+
+  .price-title {
+	display: flex;
+	padding: 10px;
+	width: 100%;
+  }
+
+  .card__title {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	width: 80%;
+	font-size: 25px;
+  }
+  
+  .car__price {
+	width: 20%;
+	font-size: 18px;
   }
 
 .wrapper-grid div.card__body.aubergeLaCannebiere{
@@ -300,7 +283,7 @@ i.fas.fa-chart-line{
     background-position: top;
 	
 }
-
+/*
 .wrapper-grid div.card__body.hotelChezAmina{
 
 	background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
@@ -314,17 +297,17 @@ i.fas.fa-chart-line{
     background-position: top;
 	
 }
-
+*/
 
 
 
 
 #mainContent div.card img {
 
-    /*height: 120px;
+    /*height: 120px;*/
     object-fit: cover;
 }
-*/
+
 /*--------Additional content--------*/
 
 
