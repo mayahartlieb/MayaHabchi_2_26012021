@@ -466,8 +466,6 @@ i.fas.fa-info-circle::before{
 	object-fit:cover;
 	height:60%;
 	position: relative;
-    top: 0;
-    bottom: 0;
     background-repeat: no-repeat;
     background-size: 260px;
     background-position: top;
@@ -481,8 +479,6 @@ i.fas.fa-info-circle::before{
 	object-fit:cover;
 	height:60%;
 	position: relative;
-    top: 0;
-    bottom: 0;
     background-repeat: no-repeat;
     background-size: 260px;
     background-position: top;
@@ -496,8 +492,6 @@ i.fas.fa-info-circle::before{
 	object-fit:cover;
 	height:60%;
 	position: relative;
-    top: 0;
-    bottom: 0;
     background-repeat: no-repeat;
     background-size: 260px;
     background-position: top;
@@ -510,8 +504,6 @@ i.fas.fa-info-circle::before{
 	object-fit:cover;
 	height:60%;
 	position: relative;
-    top: 0;
-    bottom: 0;
     background-repeat: no-repeat;
     background-size: 260px;
     background-position: top;
@@ -524,8 +516,6 @@ i.fas.fa-info-circle::before{
 	object-fit:cover;
 	height:60%;
 	position: relative;
-    top: 0;
-    bottom: 0;
     background-repeat: no-repeat;
     background-size: 260px;
     background-position: top;
@@ -538,8 +528,6 @@ i.fas.fa-info-circle::before{
 	object-fit:cover;
 	height:60%;
 	position: relative;
-    top: 0;
-    bottom: 0;
     background-repeat: no-repeat;
     background-size: 260px;
     background-position: top;
@@ -637,6 +625,11 @@ top: 120px;
 	
 	
 }
+.aside-container div.card__body.hotelLeSoleilDuMatin{
+
+
+}
+
 
 .aside-container div.card__body{
 
