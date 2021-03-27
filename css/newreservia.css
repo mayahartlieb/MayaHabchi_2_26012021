@@ -99,7 +99,7 @@ h3{
 }
 
 p{
-	font-size: medium;
+	
 	font-weight: 600;
     font-size: large;
 }
@@ -116,7 +116,7 @@ img {
 
 	max-width: 1480px; /*Un point d'arrêt fluide */
 	min-width: 1280px;
-	margin: 0px 22px;; /*Pour centrer les éléments: 
+	margin: 0px 50px; /*Pour centrer les éléments: 
 	je vais définir une marge égale à 0 en haut et en bas et 22px à droite et à gauche*/
 	
 }
@@ -143,7 +143,8 @@ définir cinq selecteurs pour mes cinq zones*/
 #header ul li:last-child a{
 
 	color: var(--link-active-color);
-	font-weight: bolder!important;
+	font-weight: 800;
+	
 }
 
 #header ul{
@@ -153,12 +154,20 @@ définir cinq selecteurs pour mes cinq zones*/
     align-items: start;
 }
 
+/*
+.button:target~a [href="#hebergements"]{
+
+	border-top: solid 2px var(--link-focus-color);
+    color: var(--link-focus-color);
+
+}
+*/
 
 #header ul li{
 
 	display: flex;
 	font-family: 'Raleway', sans-serif;	
-	margin-right: 5.5rem;
+	
 	
 }
 
@@ -167,12 +176,14 @@ définir cinq selecteurs pour mes cinq zones*/
 	display: flex;
 	font-family: 'Raleway', sans-serif;
 	color: var(--header-text-color);
-	padding-top: 2rem;
+	padding-top: 2.5rem;
 	font-weight: 600;
-	
+	padding-right: 2.5rem;
+	padding-left: 2.5rem;
+	padding-bottom: 1rem;
 }
 
-#header ul li a:focus {
+#header ul li a:focus, #header ul li a:active{
 
     border-bottom: none;
     border-top: solid 2px var(--link-focus-color);
@@ -180,16 +191,31 @@ définir cinq selecteurs pour mes cinq zones*/
     margin-top: 0%;
 }
 
+
+
 #header ul li:first-child{
 
     margin-right: auto;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 0;
     
 }
+
+#header ul li:first-child a{
+
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 0;
+    
+
+}
+
 
 
 #header img{
 
-    max-width: 28%;
+    max-width: 26%;
 }
 
 
@@ -230,6 +256,7 @@ définir cinq selecteurs pour mes cinq zones*/
 #mainNav header p{
 
 	font-weight: 700;
+	font-size: medium;
 }
 
 #mainNav div.search{
@@ -261,8 +288,7 @@ définir cinq selecteurs pour mes cinq zones*/
 	border-top: 3px solid var(--mainNav-link-border-color);
 	border-right: 3px solid var(--mainNav-link-border-color);
 	border-bottom: 3px solid var(--mainNav-link-border-color);
-	border-radius: 27px;
-	
+	border-radius: 27px;	
 	padding-right: 1.5rem;
 }
 
@@ -462,75 +488,75 @@ i.fas.fa-info-circle::before{
 
 .wrapper-grid div.card__body.aubergeLaCannebiere{
 
-	background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+	background-image: url(../images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 	object-fit:cover;
 	height:60%;
 	position: relative;
     background-repeat: no-repeat;
-    background-size: 260px;
-    background-position: top;
+    background-size: cover;
+    background-position: center;
 	/*border: 2px solid black;*/
 }
 
 
 .wrapper-grid div.card__body.hotelDuPort{
 
-	background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+	background-image: url(../images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
 	object-fit:cover;
 	height:60%;
 	position: relative;
     background-repeat: no-repeat;
-    background-size: 260px;
-    background-position: top;
+    background-size: cover;
+    background-position: center;
 	/*border: 2px solid black;*/
 }
 
 
 .wrapper-grid div.card__body.hotelLesMouettes{
 
-	background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+	background-image: url(../images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg);
 	object-fit:cover;
 	height:60%;
 	position: relative;
     background-repeat: no-repeat;
-    background-size: 260px;
-    background-position: top;
+	background-size: cover;
+    background-position: center;
 	/*border: 2px solid black;*/
 }
 
 .wrapper-grid div.card__body.hotelDeLaMer{
 
-	background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+	background-image: url(../images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
 	object-fit:cover;
 	height:60%;
 	position: relative;
     background-repeat: no-repeat;
-    background-size: 260px;
-    background-position: top;
+    background-size: cover;
+    background-position: center;
 	/*border: 2px solid black;*/
 }
 
 .wrapper-grid div.card__body.aubergeLePanier{
 
-	background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+	background-image: url(../images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
 	object-fit:cover;
 	height:60%;
 	position: relative;
     background-repeat: no-repeat;
-    background-size: 260px;
-    background-position: top;
+    background-size: cover;
+    background-position: center;
 	/*border: 2px solid black;*/
 }
 
 .wrapper-grid div.card__body.hotelChezAmina{
 
-	background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+	background-image: url(../images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 	object-fit:cover;
 	height:60%;
 	position: relative;
     background-repeat: no-repeat;
-    background-size: 260px;
-    background-position: top;
+    background-size: cover;
+    background-position: center;
 	/*border: 2px solid black;*/
 }
 
@@ -555,7 +581,7 @@ top: 120px;
 .wrapper-grid p{
 
 	font-size: medium;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.3rem;
 }
 
 .wrapper-grid div.card__description{
@@ -617,6 +643,13 @@ top: 120px;
 	
 }
 
+.aside-container div.card{
+
+	min-height: 150px;
+	border-radius: 1.5rem;
+}
+
+
 .aside-container div.card img{
 
 	height: 200px;
@@ -626,14 +659,39 @@ top: 120px;
 	
 }
 .aside-container div.card__body.hotelLeSoleilDuMatin{
-
-
+	height: 200px;
+	background-image: url(../images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+	background-size: cover;
+	background-position: top;
+	
 }
 
+.aside-container div.card__body.auCoeurDeLeau{
+
+	height: 200px;
+	background-image: url(../images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg);
+	background-size: cover;
+	background-position: top;
+	
+}
+
+.aside-container div.card__body.hotelToutBleuEtBlanc{
+
+	height: 200px;
+	background-image: url(../images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+	background-size: cover;
+	background-position: top;
+}
 
 .aside-container div.card__body{
 
 	display: flex;
+	flex-direction: row-reverse;
+}
+
+.aside-container div.card__description{
+
+	width: 60%;
 }
 
 .aside-container div.card__description h3{
@@ -819,7 +877,7 @@ i.fas.fa-chart-line{
 
 #additionalContent div.card4{
 
- 	 grid-column:3 ; 
+ 	 grid-column: 3; 
  	 grid-row-start: 1; 
 	 grid-row-end: 4;
 	 /*border: none;*/
@@ -888,7 +946,7 @@ i.fas.fa-chart-line{
 
 	padding-top: 2rem;
 	font-family: 'Raleway', sans-serif;
-	font-size:larger;
+	font-size: larger;
 	font-weight: bolder;
 
 }
