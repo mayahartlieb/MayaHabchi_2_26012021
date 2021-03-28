@@ -649,7 +649,7 @@ top: 120px;
 	border-radius: 1.5rem;
 }
 
-
+/*
 .aside-container div.card img{
 
 	height: 200px;
@@ -658,30 +658,33 @@ top: 120px;
 	
 	
 }
+*/
+
 .aside-container div.card__body.hotelLeSoleilDuMatin{
-	height: 200px;
+
 	background-image: url(../images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-	background-size: cover;
-	background-position: top;
-	
+	background-size: contain;
+	background-position: right;
+
 }
 
 .aside-container div.card__body.auCoeurDeLeau{
 
-	height: 200px;
+	
 	background-image: url(../images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg);
-	background-size: cover;
-	background-position: top;
+	background-size: contain;
+	background-position: right;
 	
 }
 
 .aside-container div.card__body.hotelToutBleuEtBlanc{
-
-	height: 200px;
+	
 	background-image: url(../images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 	background-size: cover;
-	background-position: top;
+	background-position: center;
+	background-repeat: no-repeat;
 }
+
 
 .aside-container div.card__body{
 
