@@ -208,7 +208,6 @@ définir cinq selecteurs pour mes cinq zones*/
 	padding-left: 0;
 	padding-bottom: 0;
     
-
 }
 
 
@@ -300,8 +299,7 @@ définir cinq selecteurs pour mes cinq zones*/
 	color: var(--body-background-color);
 	font-size: 32pt ;
 	width: 50px;
-	height: 50px;
-	
+	height: 50px;	
 }
 
 .fa-money-bill-wave:before, .fa-child:before, .fa-heart:before, .fa-dog:before{
@@ -420,7 +418,6 @@ i.fas.fa-info-circle::after{
 }
 
 i.fas.fa-info-circle::before{
-
 	
 	margin-right: 13px;
 	color: var(--body-background-color);
@@ -474,10 +471,6 @@ i.fas.fa-info-circle::before{
 	/*box-shadow: 10px 5px 5px var(--icon-border-color);*/
 	border-radius: 2rem;
 	border: 6px solid var(--body-background-color);
-	/*display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;*/
 	cursor: pointer;
 	/*ease-in - specifies a transition effect with a slow start*/
 	transition: transform 200ms ease-in;
@@ -802,26 +795,32 @@ i.fas.fa-chart-line{
 	display: grid;
 	grid-template-columns: repeat(4, 0.5fr);
 	gap: 36px;
-	grid-template-rows: repeat(2, 7vw); /*vw = viewport */
-	
+	/*grid-template-rows: repeat(2, 7vw); /*vw = viewport */
+	grid-template-rows: 0.7fr 0.2fr 0.5fr 0.4fr;
 }
 
+#additionalContent header h1{
 
+	font-weight:500;
+	font-size: larger;
+	padding-left: 1px;
+	padding-bottom: 25px;
+}
+
+#additionalContent h1.card__title{
+
+	font-size: medium;
+	font-weight:800;
+}
 
 #additionalContent div.card1{
 
 	grid-column: 1;
     grid-row-start: 1;
-	grid-row-end: 4;
-	/*border: none;*/
+	grid-row-end: 5;
 	overflow: hidden;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 2rem;
-	/*border: 6px solid black;*/
-	/*display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;*/
 	cursor: pointer;
 	/*ease-in - specifies a transition effect with a slow start*/
 	transition: transform 200ms ease-in;
@@ -829,6 +828,25 @@ i.fas.fa-chart-line{
 	background: var(--body-background-color);
 
    
+}
+
+.card1 div.card__body.vieuxPort{
+
+	background-image: url(../images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+	height: 87%;
+	object-fit: cover;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.card1 h1{
+
+	position: relative;
+	top: 410px;
+	
 }
 
 #additionalContent div.card2{
@@ -850,9 +868,25 @@ i.fas.fa-chart-line{
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
 	background: var(--body-background-color);
-
     
-	
+}
+
+.card2 div.card__body.fortDePomegues{
+
+	background-image: url(../images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+	object-fit: cover;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height:80%;
+
+}
+
+.card2 h1{
+
+	position: relative;
+	top: 170px;
 }
 
 #additionalContent div.card3{
@@ -878,11 +912,28 @@ i.fas.fa-chart-line{
    
 }
 
+.card3 div.card__body.ilesDuFrioul{
+
+	background-image: url(../images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+	object-fit: cover;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height:75%;
+}
+
+.card3 h1{
+	position: relative;
+	top:60px;
+}
+
+
 #additionalContent div.card4{
 
  	 grid-column: 3; 
  	 grid-row-start: 1; 
-	 grid-row-end: 4;
+	 grid-row-end: 5;
 	 /*border: none;*/
 	overflow: hidden;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -898,6 +949,24 @@ i.fas.fa-chart-line{
 	/*Transition effects are animation options*/
 	background: var(--body-background-color);
  
+}
+
+.card4 div.card__body.ParcNationalDesCalanques{
+
+	background-image: url(../images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+	height: 87%;
+	object-fit: cover;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+
+}
+
+.card4 h1{
+	position: relative;
+	top: 410px;
 }
 
 #additionalContent div.card5{
@@ -1420,6 +1489,7 @@ les unes à côté des autres sans espacements. */
 		#additionalContent header h1{
 
 			padding: 1rem 0 2rem 0.5rem;
+			
 		}
 
 		#additionalContent div.row{
