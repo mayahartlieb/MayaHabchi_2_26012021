@@ -793,11 +793,13 @@ i.fas.fa-chart-line{
 #additionalContent div.row{
 
 	display: grid;
-	grid-template-columns: repeat(4, 0.5fr);
+	grid-template-columns: repeat(4, 1fr);
 	gap: 36px;
 	/*grid-template-rows: repeat(2, 7vw); /*vw = viewport */
-	grid-template-rows: 0.7fr 0.2fr 0.5fr 0.4fr;
+	grid-template-rows:repeat(2, minmax(106px, auto));
+	grid-auto-flow: dense;
 }
+
 
 #additionalContent header h1{
 
@@ -815,9 +817,10 @@ i.fas.fa-chart-line{
 
 #additionalContent div.card1{
 
+	grid-row: span 3;
 	grid-column: 1;
-    grid-row-start: 1;
-	grid-row-end: 5;
+    /*grid-row-start: 1;
+	grid-row-end: 5;*/
 	overflow: hidden;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 2rem;
@@ -826,34 +829,33 @@ i.fas.fa-chart-line{
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
 	background: var(--body-background-color);
-
+	/*height: 468px;*/
    
 }
 
 .card1 div.card__body.vieuxPort{
 
 	background-image: url(../images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-	height: 87%;
 	object-fit: cover;
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: right;
+	height: 87%;
 
 }
 
 .card1 h1{
 
 	position: relative;
-	top: 410px;
+	top: 425px;
 	
 }
 
 #additionalContent div.card2{
 
 	grid-column: 2;
-    grid-row-start: 1;
-	grid-row-end: 3;
+    grid-row:1/ span 2;
 	/*border: none;*/
 	overflow: hidden;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -868,7 +870,7 @@ i.fas.fa-chart-line{
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
 	background: var(--body-background-color);
-    
+    /*height:252px;*/
 }
 
 .card2 div.card__body.fortDePomegues{
@@ -879,21 +881,20 @@ i.fas.fa-chart-line{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height:80%;
+	height: 77%;
 
 }
 
 .card2 h1{
 
 	position: relative;
-	top: 170px;
+	top: 195px;
 }
 
 #additionalContent div.card3{
 	
 	grid-column: 2;
-    grid-row-start: 3;
-	grid-row-end: 4;
+    grid-row: 3/ span 1;
 	/*border: none;*/
 	overflow: hidden;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -908,7 +909,7 @@ i.fas.fa-chart-line{
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
 	background: var(--body-background-color);
-
+	/*height:162px;*/
    
 }
 
@@ -920,10 +921,11 @@ i.fas.fa-chart-line{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height:75%;
+	height: 75%;
 }
 
 .card3 h1{
+
 	position: relative;
 	top:60px;
 }
@@ -933,7 +935,7 @@ i.fas.fa-chart-line{
 
  	 grid-column: 3; 
  	 grid-row-start: 1; 
-	 grid-row-end: 5;
+	 grid-row-end: 4;
 	 /*border: none;*/
 	overflow: hidden;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -948,7 +950,7 @@ i.fas.fa-chart-line{
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
 	background: var(--body-background-color);
- 
+	/*height: 468px;*/
 }
 
 .card4 div.card__body.ParcNationalDesCalanques{
@@ -960,13 +962,13 @@ i.fas.fa-chart-line{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-
+	height:87%;
 
 }
 
 .card4 h1{
 	position: relative;
-	top: 410px;
+	top: 425px;
 }
 
 #additionalContent div.card5{
@@ -988,8 +990,26 @@ i.fas.fa-chart-line{
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
 	background: var(--body-background-color);
-
+	/*height: 216px;*/
 }
+
+.card5 div.card__body.NotreDameDeLaGarde{
+
+	background-image: url(../images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+	object-fit: cover;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 77%;
+}
+
+.card5 h1{
+
+	position: relative;
+	top: 50px;
+}
+
 
 #additionalContent div.card6{
 
@@ -1010,7 +1030,24 @@ i.fas.fa-chart-line{
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
 	background: var(--body-background-color);
+	/*height: 216px;*/
+}
 
+.card6 div.card__body.ParcLongChamp{
+
+	background-image: url(../images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+	object-fit: cover;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 90%;
+}
+
+.card6 h1{
+
+	position: relative;
+	/*top: 140px;*/
 }
 
 
@@ -1162,7 +1199,6 @@ les unes à côté des autres sans espacements. */
             margin-top: auto;
 			flex-wrap: wrap;
 			align-items: stretch;
-			flex-direction: row-reverse;
             
         }
 
