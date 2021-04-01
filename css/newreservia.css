@@ -673,9 +673,9 @@ top: 120px;
 .aside-container div.card__body.hotelToutBleuEtBlanc{
 	
 	background-image: url(../images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-	background-size: cover;
-	background-position: center;
 	background-repeat: no-repeat;
+	background-size: 50% 100%;
+    background-position: left;
 }
 
 
@@ -819,9 +819,7 @@ i.fas.fa-chart-line{
 
 	grid-row: span 3;
 	grid-column: 1;
-    /*grid-row-start: 1;
-	grid-row-end: 5;*/
-	overflow: hidden;
+    overflow: hidden;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 2rem;
 	cursor: pointer;
@@ -829,7 +827,7 @@ i.fas.fa-chart-line{
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
 	background: var(--body-background-color);
-	/*height: 468px;*/
+	height: 468px;
    
 }
 
@@ -837,7 +835,6 @@ i.fas.fa-chart-line{
 
 	background-image: url(../images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 	object-fit: cover;
-	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: right;
@@ -848,7 +845,7 @@ i.fas.fa-chart-line{
 .card1 h1{
 
 	position: relative;
-	top: 425px;
+	top: 415px;
 	
 }
 
@@ -927,7 +924,7 @@ i.fas.fa-chart-line{
 .card3 h1{
 
 	position: relative;
-	top:55px;
+	top:135px;
 }
 
 
@@ -968,7 +965,7 @@ i.fas.fa-chart-line{
 
 .card4 h1{
 	position: relative;
-	top: 425px;
+	top: 415px;
 }
 
 #additionalContent div.card5{
@@ -1007,7 +1004,7 @@ i.fas.fa-chart-line{
 .card5 h1{
 
 	position: relative;
-	top: 50px;
+	top: 195px;
 }
 
 
@@ -1033,7 +1030,7 @@ i.fas.fa-chart-line{
 	/*height: 216px;*/
 }
 
-.card6 div.card__body.ParcLongChamp{
+.card6 div.card__body.ParcLongchamp{
 
 	background-image: url(../images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
 	object-fit: cover;
@@ -1041,13 +1038,13 @@ i.fas.fa-chart-line{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 90%;
+	height: 80%;
 }
 
 .card6 h1{
 
 	position: relative;
-	/*top: 140px;*/
+	top: 140px;
 }
 
 
