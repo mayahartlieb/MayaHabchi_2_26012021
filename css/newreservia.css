@@ -183,7 +183,7 @@ définir cinq selecteurs pour mes cinq zones*/
 	padding-bottom: 1rem;
 }
 
-#header ul li a:focus, #header ul li a:active{
+.button a:focus, .button a:active{
 
     border-bottom: none;
     border-top: solid 2px var(--link-focus-color);
@@ -482,7 +482,7 @@ i.fas.fa-info-circle::before{
 .wrapper-grid div.card__body.aubergeLaCannebiere{
 
 	background-image: url(../images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-	object-fit:cover;
+	object-fit: cover;
 	height:60%;
 	position: relative;
     background-repeat: no-repeat;
@@ -640,6 +640,7 @@ top: 120px;
 
 	min-height: 150px;
 	border-radius: 1.5rem;
+	padding-right: 1.1rem;
 }
 
 /*
@@ -674,7 +675,7 @@ top: 120px;
 	
 	background-image: url(../images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 	background-repeat: no-repeat;
-	background-size: 50% 100%;
+	background-size: 50% 100%; /*first value : width, second value : height*/
     background-position: left;
 }
 
@@ -686,7 +687,7 @@ top: 120px;
 }
 
 .aside-container div.card__description{
-
+	
 	width: 60%;
 }
 
@@ -918,7 +919,7 @@ i.fas.fa-chart-line{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 75%;
+	height: 70%;
 }
 
 .card3 h1{
@@ -1038,13 +1039,13 @@ i.fas.fa-chart-line{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 80%;
+	height: 70%;
 }
 
 .card6 h1{
 
 	position: relative;
-	top: 140px;
+	top: 135px;
 }
 
 
@@ -1056,18 +1057,18 @@ i.fas.fa-chart-line{
 	font-weight: bolder;
 
 }
-
+/*
 #additionalContent div.row img{
 
 	object-fit: cover;
-	/*The object fit property only works if we set the width and height properties.*/
+	/*The object fit property only works if we set the width and height properties.
 
 }
 
 .responsive1{
 
 	height: 450px;
-	/*396px*/
+	/*396px
 }
 
 .responsive2{
@@ -1094,6 +1095,8 @@ i.fas.fa-chart-line{
 
 	height:144px;
 }
+*/
+
 
 /*-----------footer-------------*/
 
@@ -1266,6 +1269,53 @@ les unes à côté des autres sans espacements. */
 			
 		}
 
+		
+.wrapper-grid div.card__body.aubergeLaCannebiere{
+
+	background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+	
+}
+
+
+.wrapper-grid div.card__body.hotelDuPort{
+
+	background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+
+}
+
+
+.wrapper-grid div.card__body.hotelLesMouettes{
+
+	background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+	
+}
+
+.wrapper-grid div.card__body.hotelDeLaMer{
+
+	background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+
+}
+
+.wrapper-grid div.card__body.aubergeLePanier{
+
+	background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+
+}
+
+.wrapper-grid div.card__body.hotelChezAmina{
+
+	background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+	
+}
+
+
+
+
+
+
+
+
+
 		#mainContent div.row{
 
 			display: grid;
@@ -1281,6 +1331,31 @@ les unes à côté des autres sans espacements. */
 			gap: 30px;*/
 			padding-bottom: 30px;
 		}
+
+
+
+		.aside-container div.card__body.hotelLeSoleilDuMatin{
+
+			background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+			
+		
+		}
+		
+		.aside-container div.card__body.auCoeurDeLeau{
+		
+			
+			background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+			
+			
+		}
+		
+		.aside-container div.card__body.hotelToutBleuEtBlanc{
+			
+			background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+		
+		}
+		
+
 
 
 		/*---------additionalContent----------*/
@@ -1309,6 +1384,46 @@ les unes à côté des autres sans espacements. */
 	        grid-row-end:unset;
 		}
 
+		
+			.card1 div.card__body.vieuxPort{
+	
+			background-image: url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+				
+			}
+	
+			.card2 div.card__body.fortDePomegues{
+	
+			background-image: url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+						
+			}
+	
+			.card3 div.card__body.ilesDuFrioul{
+	
+			background-image: url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+				
+			}
+	
+			.card4 div.card__body.ParcNationalDesCalanques{
+	
+			background-image: url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+		
+	
+			}
+			
+	
+			.card5 div.card__body.NotreDameDeLaGarde{
+	
+			background-image: url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+		
+			}
+	
+	
+			.card6 div.card__body.ParcLongchamp{
+	
+			background-image: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+		
+			}
+
 
         /*----------footer------------*/
 
@@ -1329,12 +1444,13 @@ les unes à côté des autres sans espacements. */
 
      
     }
-/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------TABLETTE ------------------------------------------------------------------------------*/
 
 @media all and (min-width: 768px) and (max-width: 1024px)
 	{
 		
         .wrapper{
+
 			min-width: 768px;
             max-width: 1024px; /*Un point d'arrêt fluide */
             margin: 0px 22px; /*Pour centrer les éléments: 
@@ -1404,6 +1520,49 @@ les unes à côté des autres sans espacements. */
 			
 		}
 
+		
+.wrapper-grid div.card__body.aubergeLaCannebiere{
+
+	background-image: url(../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+	
+}
+
+
+.wrapper-grid div.card__body.hotelDuPort{
+
+	background-image: url(../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+
+}
+
+
+.wrapper-grid div.card__body.hotelLesMouettes{
+
+	background-image: url(../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+	
+}
+
+.wrapper-grid div.card__body.hotelDeLaMer{
+
+	background-image: url(../images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+	
+}
+
+.wrapper-grid div.card__body.aubergeLePanier{
+
+	background-image: url(../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+	
+}
+
+
+
+.wrapper-grid div.card__body.hotelChezAmina{
+
+	background-image: url(../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+	
+}
+
+
+
 		#mainContent aside header {
 
 			padding-bottom: 1rem;
@@ -1416,8 +1575,79 @@ les unes à côté des autres sans espacements. */
 			grid-template-rows: 0.7fr 0.7fr 0.7fr 0.1fr;
 		}
 
+
+
+		
+	.aside-container div.card__body.hotelLeSoleilDuMatin{
+
+	background-image: url(../images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+	
+
+	}
+
+	.aside-container div.card__body.auCoeurDeLeau{
+
+	
+	background-image: url(../images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg);
+	
+	
+	}
+
+
+	.aside-container div.card__body.hotelToutBleuEtBlanc{
+	
+	background-image: url(../images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+	
+	}
+
+
+
 		
 		/*---------additionalContent----------*/
+
+		
+
+		.card1 div.card__body.vieuxPort{
+	
+		background-image: url(../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+			
+		}
+
+		.card2 div.card__body.fortDePomegues{
+
+		background-image: url(../images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+					
+		}
+
+		.card3 div.card__body.ilesDuFrioul{
+
+		background-image: url(../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+			
+		}
+
+		.card4 div.card__body.ParcNationalDesCalanques{
+
+		background-image: url(../images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+	
+
+		}
+		
+
+		.card5 div.card__body.NotreDameDeLaGarde{
+
+		background-image: url(../images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+	
+		}
+
+
+		.card6 div.card__body.ParcLongchamp{
+
+		background-image: url(../images/activites/3_medium/na-paulin-wH2-EJoDcV0-unsplash.jpg);
+	
+		}
+
+
+
 		/*
 		#additionalContent header {
 
