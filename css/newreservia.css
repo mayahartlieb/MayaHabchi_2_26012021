@@ -176,11 +176,12 @@ définir cinq selecteurs pour mes cinq zones*/
 	display: flex;
 	font-family: 'Raleway', sans-serif;
 	color: var(--header-text-color);
-	padding-top: 2.5rem;
+	padding: 2.5rem 2.5rem 1rem 2.5rem;
+	/*padding-top: 2.5rem;
 	font-weight: 600;
 	padding-right: 2.5rem;
 	padding-left: 2.5rem;
-	padding-bottom: 1rem;
+	padding-bottom: 1rem;*/
 }
 
 .button a:focus, .button a:active{
@@ -1195,24 +1196,28 @@ les unes à côté des autres sans espacements. */
         }
 
         #header ul{
-
+			border: 2px solid black;
             margin-top: auto;
 			flex-wrap: wrap;
 			align-items: stretch;
+			margin-bottom: 2rem;
             
         }
 
 		.button{
 
 			align-items:stretch;
-			flex-wrap: wrap;
-			
+			flex-wrap: wrap;			
 
 		}
-        #header ul li a:focus {
 
+
+        #header ul li.button:focus {
+
+			border-top: none;
             border-bottom: solid 3px var(--link-focus-color);    
             color: var(--link-active-color);
+			
         }
 
 
@@ -1251,6 +1256,30 @@ les unes à côté des autres sans espacements. */
 
         /*---------mainContent----------*/
 
+		#mainContent section header{
+			
+			padding-top: 0;
+
+		}
+
+		#hebergements h1{
+
+			font-size: 150%;
+			font-weight: 700;
+			padding:1rem 0 1rem 0.8rem;
+		
+		}
+
+		#hebergements div.card{
+
+			min-height: 240px;
+		}
+
+		#mainContent div.row > section{
+			order: 2;
+			
+		}
+
 
         #mainContent section{
 
@@ -1262,55 +1291,77 @@ les unes à côté des autres sans espacements. */
 
 			display: grid;
 			grid-template-columns: 1fr;
-			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-			gap: 30px;
+			grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 0.1fr;
+			gap: 15px;
 			justify-content: center;
 			padding: 0 20px;
 			
+			
 		}
 
+		.wrapper-grid h3{
+
+			top: 140px;
+		}
 		
-.wrapper-grid div.card__body.aubergeLaCannebiere{
+		.wrapper-grid div.card__description{
 
-	background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+			top: 140px;
+		}
+
+		.stars{
+			font-size: 0.9em;
+		}
+
+		.wrapper-grid div.card__body.aubergeLaCannebiere{
+
+		background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+		height: 90%;
 	
-}
+		}
 
 
-.wrapper-grid div.card__body.hotelDuPort{
+		.wrapper-grid div.card__body.hotelDuPort{
 
-	background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+		background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+		height: 90%;	
 
-}
-
-
-.wrapper-grid div.card__body.hotelLesMouettes{
-
-	background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-	
-}
-
-.wrapper-grid div.card__body.hotelDeLaMer{
-
-	background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-
-}
-
-.wrapper-grid div.card__body.aubergeLePanier{
-
-	background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-
-}
-
-.wrapper-grid div.card__body.hotelChezAmina{
-
-	background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-	
-}
+		}
 
 
+		.wrapper-grid div.card__body.hotelLesMouettes{
+
+		background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+		height: 90%;
+
+		}
+
+		.wrapper-grid div.card__body.hotelDeLaMer{
+
+		background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+		height: 90%;
+
+		}
+
+		.wrapper-grid div.card__body.aubergeLePanier{
+
+		background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+		height: 90%;
+
+		}
+
+		.wrapper-grid div.card__body.hotelChezAmina{
+
+		background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+		height: 90%;	
+		}
 
 
+
+		#mainContent div.wrapper{
+
+			margin:0;
+		}
 
 
 
@@ -1324,6 +1375,15 @@ les unes à côté des autres sans espacements. */
 			gap: 36px;
 		}
 
+		
+
+		#mainContent div.row > aside{
+
+			order: 1;
+			border-radius: 0;
+		}
+
+
 		#mainContent div.aside-container {
 			
 			/*grid-template-rows: 0.7fr 0.7fr;
@@ -1332,6 +1392,12 @@ les unes à côté des autres sans espacements. */
 			padding-bottom: 30px;
 		}
 
+		.Afficher h2{
+
+			font-weight: 700;
+			font-size: 135%;
+
+		}
 
 
 		.aside-container div.card__body.hotelLeSoleilDuMatin{
@@ -1377,7 +1443,12 @@ les unes à côté des autres sans espacements. */
 			
 		}
 
-		#additionalContent div.card1, #additionalContent div.card2, #additionalContent div.card3, #additionalContent div.card4, #additionalContent div.card5, #additionalContent div.card6{
+		#additionalContent div.card1, 
+		#additionalContent div.card2,
+		 #additionalContent div.card3,
+		  #additionalContent div.card4,
+		   #additionalContent div.card5, 
+		   #additionalContent div.card6{
 
 			grid-column:unset;
             grid-row-start:unset;
@@ -1433,9 +1504,8 @@ les unes à côté des autres sans espacements. */
         
          justify-content:center;        
         justify-content:center;
-         justify-content:center;        
-        
-         flex-direction: column;
+         justify-content:center;  
+        flex-direction: column;
     
        }
 
