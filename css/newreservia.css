@@ -1196,7 +1196,7 @@ les unes à côté des autres sans espacements. */
         }
 
         #header ul{
-			border: 2px solid black;
+			/*border: 2px solid black;*/
             margin-top: auto;
 			flex-wrap: wrap;
 			align-items: stretch;
@@ -1396,7 +1396,7 @@ les unes à côté des autres sans espacements. */
 
 			font-weight: 700;
 			font-size: 135%;
-
+			padding: 0.5rem 2rem 1.2rem 1rem;
 		}
 
 
@@ -1429,10 +1429,23 @@ les unes à côté des autres sans espacements. */
 		#additionalContent header {
 
 			padding-bottom: 25px;
-			margin-left: -20px;
+			margin-left: -5px;
 			font-weight: bolder;
 		}
 
+
+		#additionalContent header h1{
+
+			font-size: 150%;
+			padding-left: 0;
+			padding-bottom: 0.5rem;
+		}
+
+		#additionalContent h1.card__title{
+
+			font-size: 120%;
+		
+		}
 
 		#additionalContent div.row{
 
@@ -1442,6 +1455,13 @@ les unes à côté des autres sans espacements. */
 			justify-content: start;
 			
 		}
+
+		
+		.card1 h1, .card2 h1, .card3 h1, .card4 h1, .card5 h1, .card6 h1{
+
+			top: 170px;
+		}
+
 
 		#additionalContent div.card1, 
 		#additionalContent div.card2,
@@ -1453,31 +1473,35 @@ les unes à côté des autres sans espacements. */
 			grid-column:unset;
             grid-row-start:unset;
 	        grid-row-end:unset;
+			height: 235px;
 		}
 
 		
 			.card1 div.card__body.vieuxPort{
 	
 			background-image: url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-				
+			height: 70%;	
+
 			}
 	
 			.card2 div.card__body.fortDePomegues{
 	
 			background-image: url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-						
+			height: 70%;	
+
 			}
 	
 			.card3 div.card__body.ilesDuFrioul{
 	
 			background-image: url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-				
+			height: 70%;
+
 			}
 	
 			.card4 div.card__body.ParcNationalDesCalanques{
 	
 			background-image: url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-		
+			height: 70%;	
 	
 			}
 			
@@ -1485,14 +1509,16 @@ les unes à côté des autres sans espacements. */
 			.card5 div.card__body.NotreDameDeLaGarde{
 	
 			background-image: url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-		
+			height: 70%;
+
 			}
 	
 	
 			.card6 div.card__body.ParcLongchamp{
 	
 			background-image: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-		
+			height: 70%;
+
 			}
 
 
