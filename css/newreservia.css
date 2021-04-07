@@ -1223,10 +1223,12 @@ les unes à côté des autres sans espacements. */
 
 
         /*------------mainNav-----------*/
+
+
 		.button-group li h2{
 
 			margin-right: 15rem;
-			margin-bottom: 1rem;
+			margin-bottom: 1.5rem;
 			font-size: 150%;
 		}
 
@@ -1234,11 +1236,14 @@ les unes à côté des autres sans espacements. */
         .fa-money-bill-wave::before, .fa-child::before, .fa-heart::before, .fa-dog::before{
 
 			padding: 20px;
-			border-radius: 28px;
+			padding-left:22px;
+			border-radius: 35px;
+			font-size: 110%;
 		}
 
 
 		.button1{
+
 			margin-bottom: 1.4rem;
 		}
 
@@ -1246,9 +1251,10 @@ les unes à côté des autres sans espacements. */
 
 			margin-left: 0;
 			margin-right: 1rem;
-			padding: 1rem 3rem 1rem 0;
-			font-size: 120%;
+			padding: 1rem 1.5rem 1rem 0;
+			font-size: 140%;
 			font-weight: 800;
+			border-radius: 30px;
 		}
 
         form.search-form button.Rechercher{
@@ -1277,8 +1283,23 @@ les unes à côté des autres sans espacements. */
 			margin-right: -12px;
 			
 		}
+
+		#mainNav nav{
+
+			padding-bottom: 2rem;
+		}
         
-		
+		#mainNav div.container footer p{
+
+			font-size: 140%;
+			padding-bottom: 1%;
+			
+		}
+
+		i.fas.fa-info-circle::before{
+
+			font-size: 135%;
+		}
 
         /*---------mainContent----------*/
 
