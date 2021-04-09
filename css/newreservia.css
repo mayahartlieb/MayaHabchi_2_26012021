@@ -347,7 +347,7 @@ form.search-form button.Rechercher{
 
 i.fas.fa-map-marker-alt {
 	
-    border-radius: 13px 1px 1px 13px;
+    border-radius: 18px 1px 1px 18px;
     border: 2px solid var(--icon-border-color);
     margin: 0;
 	font-size: larger;
@@ -376,7 +376,7 @@ i.fas.fa-map-marker-alt {
 ::placeholder {
 
     color: var(--title-color);
-	font-weight: 800;
+	font-weight: 700;
 	font-size:larger;
     opacity: 1; /* Firefox */
 	font-family: 'Raleway', sans-serif;
@@ -1120,7 +1120,7 @@ i.fas.fa-chart-line{
 
 .footer section{
 
-	margin-right: 19%;
+	margin-right: 15%;
 	
 }
 
@@ -1168,17 +1168,546 @@ les unes à côté des autres sans espacements. */
 
 
 
-/*---------END OF @media 1480-----------------------------------------------------------------------------------------------------------------------*/
-
-
-
+/*------------------------END OF Extra large devices (large laptops and desktops, 1200px and up)-------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+  
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 992px et 1200px */
+
+/* W3SCHOOLS: Large devices (laptops/desktops, 992px and up) */
+@media all and (min-width: 992px) and (max-width: 1200px)
+	{
+
+
+
+        .wrapper{
+			min-width: 992px;
+			max-width: 1200px;
+			padding: 0 22px;
+		}
+
+
+
+		/*------------header--------------*/
+
+		#header img{
+
+			max-width: 32%;
+		}
+
+		/*-------------mainNav------------*/
+
+		#mainNav ul li a{
+
+			padding-right: 1rem;
+		}
+
+		.button-group li h2{
+
+			font-weight: 900;
+		}
+
+		 /*---------mainContent----------*/
+		 #mainContent div.row{
+
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 36px;
+		}
+
+		#mainContent div.wrapper-grid{
+
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr 0.1fr;
+			gap: 30px;
+			justify-content: center;
+			padding: 0 20px;
+			
+		}
+
+		#mainContent div.aside-container {
+			
+			grid-template-rows: 0.7fr 0.7fr;
+			grid-template-columns: 1fr 1fr;
+			gap: 30px;
+			padding-bottom: 30px;
+		}
+
+		aside header h1{
+
+			padding: 1rem 0 1rem 0.5rem;
+		}
+
+		i.fas.fa-chart-line {
+
+			margin-right: 0.5rem;
+		}
+
+
+		.aside-container div.card__body.hotelLeSoleilDuMatin {
+			
+			background-size: 50% 100%;
+			background-position: left;
+			height: 150px;
+			background-repeat: no-repeat;
+		}
+
+		.aside-container div.card__body.auCoeurDeLeau {
+
+			background-size: 50% 100%;
+			background-position: left;
+			background-repeat: no-repeat;
+		}
+
+		.aside-container div.card__body.hotelToutBleuEtBlanc {
+		
+			height: 180px;
+
+		}
+
+
+		/*---------additionalContent----------*/
+
+
+		#additionalContent header h1{
+
+			padding: 1rem 0 2rem 0.5rem;
+			
+		}
+
+		#additionalContent div.row{
+
+			
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr;	
+			
+		}
+
+		.responsive1, .responsive2, .responsive3, .responsive4, .responsive5, .responsive6{
+
+			height: 120px;
+		}
+
+		#additionalContent div.card1, #additionalContent div.card2, #additionalContent div.card3, #additionalContent div.card4, #additionalContent div.card5, #additionalContent div.card6{
+
+			grid-column:unset;
+            grid-row-start:unset;
+	        grid-row-end:unset;
+		}
+
+		.card2 div.card__body.fortDePomegues{
+
+			height: 87%;
+		}
+
+		.card2 h1{
+
+			top: 415px;
+		}
+
+		.card3 div.card__body.ilesDuFrioul{
+
+			height: 87%;
+		}
+
+		.card3 h1{
+
+			top: 415px;
+		}
+
+		.card5 div.card__body.NotreDameDeLaGarde{
+
+			height: 87%;
+		}
+
+		.card5 h1{
+
+			top: 415px;
+		}
+
+		.card6 div.card__body.ParcLongchamp{
+
+			height: 87%;
+		}
+
+		.card6 h1{
+
+			top:415px;
+		}
+		/*----------footer--------------*/
+
+		.footer section{
+
+			margin-right: 10%;
+		}
+
+		.footer div.container {
+			
+			justify-content: initial;
+
+		}
+
+		 
+    }
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------TABLETTE ------------------------------------------------------------------------------*/
+
+/* W3SCHOOLS: Medium devices (landscape tablets, 768px and up) */
+@media all and (min-width: 768px) and (max-width: 992px) 
+	{
+		
+        .wrapper{
+
+			min-width: 768px;
+            max-width: 992px; /*Un point d'arrêt fluide */
+            margin: 0px 22px; /*Pour centrer les éléments: 
+            je vais définir une marge égale à 0 en haut et en bas et 22px à droite et à gauche*/
+            
+        }
+
+		/*------------header------------*/
+
+		#header img{
+
+			max-width: 38%;
+		}
+
+		/*------------mainNav-----------*/
+		
+		
+		.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
+
+			margin-bottom: 1rem;
+		}
+
+        form.search-form button.Rechercher{
+            display:none;
+        }
+
+
+		form.search-form button.search_icon{
+			display:initial;
+			border-radius: 13px 15px 15px 13px;
+			border: 2px solid var(--link-active-color);
+			background-color: var(--link-active-color);
+			padding: 15px 16px 16px 15px;
+			color: var(--body-background-color);
+		}
+		
+		#site-search{
+
+			padding: 15px 0px 15px 15px;
+			border: 2px 0px 2px 2px;
+    		border-top: 2px solid var(--icon-border-color);
+    		border-right: 0px;
+    		border-bottom: 2px solid var(--icon-border-color);
+    		border-left: 2px solid var(--icon-border-color);
+			margin-right: -12px;
+		}
+
+		.button-group li a {
+
+			margin: 5px 5px 5px 0px;
+		}
+
+		.button-group h2{
+
+			font-weight: 900;
+			margin-right: 45rem;
+			padding-bottom: 1rem;
+		}
+
+		#mainNav ul li a{
+
+			margin-left: 0;
+			margin-right: 1rem;
+		}
+
+		 /*---------mainContent----------*/
+
+
+		#mainContent div.row{
+
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 36px;
+		}
+
+		#mainContent div.wrapper-grid{
+
+			display: grid;
+			grid-template-columns:1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr 0.1fr;
+			gap: 30px;
+			justify-content: center;
+			padding: 0 20px;
+			
+		}
+
+		
+		.wrapper-grid div.card__body.aubergeLaCannebiere{
+
+		background-image: url(../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+	
+		}
+
+
+		.wrapper-grid div.card__body.hotelDuPort{
+
+			background-image: url(../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+
+		}
+
+
+		.wrapper-grid div.card__body.hotelLesMouettes{
+
+			background-image: url(../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+			
+		}
+
+		.wrapper-grid div.card__body.hotelDeLaMer{
+
+			background-image: url(../images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+			
+		}
+
+		.wrapper-grid div.card__body.aubergeLePanier{
+
+			background-image: url(../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+			
+		}
+
+
+
+		.wrapper-grid div.card__body.hotelChezAmina{
+
+			background-image: url(../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+			
+		}
+
+
+
+		#mainContent aside header {
+
+			padding-bottom: 1rem;
+			margin-right: 40px;
+			margin-left: 45px;
+		}
+
+		#mainContent div.aside-container {
+
+			grid-template-rows: 0.7fr 0.7fr 0.7fr 0.1fr;
+		}
+
+
+
+				
+			.aside-container div.card__body.hotelLeSoleilDuMatin{
+
+			background-image: url(../images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+			background-size: 50% 100%;
+			background-position: left;
+			height: 150px;
+			background-repeat: no-repeat;
+			
+
+			}
+
+			.aside-container div.card__body.auCoeurDeLeau{
+
+			
+			background-image: url(../images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg);
+			background-size: 50% 100%;
+			background-position: left;
+			background-repeat: no-repeat;
+			
+			}
+
+
+			.aside-container div.card__body.hotelToutBleuEtBlanc{
+			
+			background-image: url(../images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+			
+			height: 180px;
+			}
+
+			
+		
+
+	
+
+		
+		/*---------additionalContent----------*/
+
+		
+
+		.card1 div.card__body.vieuxPort{
+	
+		background-image: url(../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+			
+		}
+
+		.card2 div.card__body.fortDePomegues{
+
+		background-image: url(../images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+					
+		}
+
+		.card3 div.card__body.ilesDuFrioul{
+
+		background-image: url(../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+			
+		}
+
+		.card4 div.card__body.ParcNationalDesCalanques{
+
+		background-image: url(../images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+	
+
+		}
+		
+
+		.card5 div.card__body.NotreDameDeLaGarde{
+
+		background-image: url(../images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+	
+		}
+
+
+		.card6 div.card__body.ParcLongchamp{
+
+		background-image: url(../images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+	
+		}
+
+		
+		#additionalContent header h1{
+
+			padding: 1rem 0 2rem 0.5rem;
+			
+		}
+
+		#additionalContent div.row{
+
+			
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr;	
+			
+		}
+
+		.responsive1, .responsive2, .responsive3, .responsive4, .responsive5, .responsive6{
+
+			height: 120px;
+		}
+
+		#additionalContent div.card1, #additionalContent div.card2, #additionalContent div.card3, #additionalContent div.card4, #additionalContent div.card5, #additionalContent div.card6{
+
+			grid-column:unset;
+            grid-row-start:unset;
+	        grid-row-end:unset;
+		}
+
+		.card2 div.card__body.fortDePomegues{
+
+			height: 87%;
+		}
+
+		.card2 h1{
+
+			top: 415px;
+		}
+
+		.card3 div.card__body.ilesDuFrioul{
+
+			height: 87%;
+		}
+
+		.card3 h1{
+
+			top: 415px;
+		}
+
+		.card4 h1{
+
+			top: 400px;
+		}
+		.card5 div.card__body.NotreDameDeLaGarde{
+
+			height: 87%;
+		}
+
+		.card5 h1{
+
+			top: 415px;
+			padding-left: 1rem;
+		}
+
+		.card6 div.card__body.ParcLongchamp{
+
+			height: 87%;
+		}
+
+		.card6 h1{
+
+			top:415px;
+		}
+
+		/*
+		#additionalContent header {
+
+			padding-bottom: 30px;
+		}
+
+		#additionalContent div.row{
+
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr 1fr;
+
+			}
+		}
+
+		#additionalContent div.row img{	
+
+			height: 120px;
+			object-fit: cover;
+			width: 100%;
+		}
+		*/
+
+		/*
+		#additionalContent div.card1, #additionalContent div.card2, #additionalContent div.card3, #additionalContent div.card4, #additionalContent div.card5, #additionalContent div.card6{
+
+			grid-column:unset;
+            grid-row-start:unset;
+	        grid-row-end:unset;
+		}
+		*/
+
+		/*----------footer--------------*/
+
+		
+		
+		.footer section {
+
+			margin-right: 8%;
+		}
+		
+	}	
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------MOBILE --------------------------------------------------------------------------------------------------*/
+
+
+
+/*W3SCHOOLS: Extra small devices (phones, 600px and down) & Small devices (portrait tablets and large phones, 600px and up) */
 @media all and (min-width: 480px) and (max-width: 768px)
 	{
 		/* Vos règles CSS pour les mobiles ici 
 		Les périphériques mobiles ne dépassant pas 480 px de large*/
         .wrapper{
-            min-width: 480px;
+           min-width: 480px;
 			max-width: 768px; /*Un point d'arrêt fluide */
             margin: 0px 22px; /*Pour centrer les éléments: 
             je vais définir une marge égale à 0 en haut et en bas et 22px à droite et à gauche*/
@@ -1195,24 +1724,31 @@ les unes à côté des autres sans espacements. */
 
         }
 
+
+
         #header ul{
+
 			/*border: 2px solid black;*/
             margin-top: auto;
-			flex-wrap: wrap;
-			align-items: stretch;
+			flex-wrap: wrap-reverse;
 			margin-bottom: 2rem;
             
         }
+		
+		#header ul li:first-child{
 
-		.button{
-
-			align-items:stretch;
-			flex-wrap: wrap;			
-
+			margin-right: auto;
+			padding-right: 0;
+			padding-left: 0;
+			padding-bottom: 0;
+			position: relative;
+			right: 10px;
+			bottom: 180px;
+			
 		}
 
 
-        #header ul li.button:focus {
+        #header ul li.button:focus-visible, #header ul li.button:active {
 
 			border-top: none;
             border-bottom: solid 3px var(--link-focus-color);    
@@ -1220,14 +1756,14 @@ les unes à côté des autres sans espacements. */
 			
         }
 
-
+		
 
         /*------------mainNav-----------*/
 
 
 		.button-group li h2{
 
-			margin-right: 15rem;
+			margin-right: 25rem;
 			margin-bottom: 1.5rem;
 			font-size: 150%;
 		}
@@ -1262,26 +1798,41 @@ les unes à côté des autres sans espacements. */
             display: none;
         }
 
+
+
 		form.search-form button.search_icon{
 
 			display:initial;
-			border-radius: 13px 15px 15px 13px;
+			border-radius: 18px;
 			border: 2px solid var(--link-active-color);
 			background-color: var(--link-active-color);
-			padding: 15px 16px 16px 15px;
+			padding: 18px 20px 18px 20px;
 			color: var(--body-background-color);
+			font-size: 130%;
 		}
 
-		form.search-form{
-
-			align-self: stretch;
-		}
-
+		
 		#site-search {
 
-			padding: 15px 20px 15px 40px;
+			padding: 13px 65px 15px 40px;
 			margin-right: -12px;
+			font-size: 120%;
 			
+		}
+
+		#mainNav header h2{
+
+			font-weight: 700;
+			font-size: 180%;
+			padding-right: 2rem;
+		}
+
+		#mainNav header p{
+
+			padding-bottom: 2rem;
+			padding-top: 0.5rem;
+			font-size: 130%;
+			font-weight: 600;
 		}
 
 		#mainNav nav{
@@ -1299,6 +1850,12 @@ les unes à côté des autres sans espacements. */
 		i.fas.fa-info-circle::before{
 
 			font-size: 135%;
+		}
+
+		i.fas.fa-map-marker-alt{
+
+			font-size: 140%;
+			padding: 20px;
 		}
 
         /*---------mainContent----------*/
@@ -1357,6 +1914,7 @@ les unes à côté des autres sans espacements. */
 		}
 
 		.stars{
+
 			font-size: 0.9em;
 		}
 
@@ -1409,8 +1967,6 @@ les unes à côté des autres sans espacements. */
 
 			margin:0;
 		}
-
-
 
 
 
@@ -1614,354 +2170,3 @@ les unes à côté des autres sans espacements. */
 
      
     }
-/*--------------------------------------------------TABLETTE ------------------------------------------------------------------------------*/
-
-@media all and (min-width: 768px) and (max-width: 1024px)
-	{
-		
-        .wrapper{
-
-			min-width: 768px;
-            max-width: 1024px; /*Un point d'arrêt fluide */
-            margin: 0px 22px; /*Pour centrer les éléments: 
-            je vais définir une marge égale à 0 en haut et en bas et 22px à droite et à gauche*/
-            
-        }
-
-
-
-		/*------------mainNav-----------*/
-
-
-        form.search-form button.Rechercher{
-            display:none;
-        }
-
-		form.search-form button.search_icon{
-			display:initial;
-			border-radius: 13px 15px 15px 13px;
-			border: 2px solid var(--link-active-color);
-			background-color: var(--link-active-color);
-			padding: 15px 16px 16px 15px;
-			color: var(--body-background-color);
-		}
-		
-		#site-search{
-
-			padding: 15px 0px 15px 15px;
-			border: 2px 0px 2px 2px;
-    		border-top: 2px solid var(--icon-border-color);
-    		border-right: 0px;
-    		border-bottom: 2px solid var(--icon-border-color);
-    		border-left: 2px solid var(--icon-border-color);
-			margin-right: -12px;
-		}
-
-		.button-group li a {
-
-			margin: 5px 5px 5px 0px;
-		}
-
-		.button-group h2{
-
-			font-weight: 900;
-		}
-
-		
-
-		 /*---------mainContent----------*/
-
-
-		#mainContent div.row{
-
-			display: grid;
-			grid-template-columns: 1fr;
-			gap: 36px;
-		}
-
-		#mainContent div.wrapper-grid{
-
-			display: grid;
-			grid-template-columns:1fr 1fr;
-			grid-template-rows: 1fr 1fr 1fr 0.1fr;
-			gap: 30px;
-			justify-content: center;
-			padding: 0 20px;
-			
-		}
-
-		
-.wrapper-grid div.card__body.aubergeLaCannebiere{
-
-	background-image: url(../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-	
-}
-
-
-.wrapper-grid div.card__body.hotelDuPort{
-
-	background-image: url(../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-
-}
-
-
-.wrapper-grid div.card__body.hotelLesMouettes{
-
-	background-image: url(../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-	
-}
-
-.wrapper-grid div.card__body.hotelDeLaMer{
-
-	background-image: url(../images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-	
-}
-
-.wrapper-grid div.card__body.aubergeLePanier{
-
-	background-image: url(../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-	
-}
-
-
-
-.wrapper-grid div.card__body.hotelChezAmina{
-
-	background-image: url(../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-	
-}
-
-
-
-		#mainContent aside header {
-
-			padding-bottom: 1rem;
-			margin-right: 40px;
-			margin-left: 45px;
-		}
-
-		#mainContent div.aside-container {
-
-			grid-template-rows: 0.7fr 0.7fr 0.7fr 0.1fr;
-		}
-
-
-
-		
-	.aside-container div.card__body.hotelLeSoleilDuMatin{
-
-	background-image: url(../images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-	
-
-	}
-
-	.aside-container div.card__body.auCoeurDeLeau{
-
-	
-	background-image: url(../images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg);
-	
-	
-	}
-
-
-	.aside-container div.card__body.hotelToutBleuEtBlanc{
-	
-	background-image: url(../images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-	
-	}
-
-
-
-		
-		/*---------additionalContent----------*/
-
-		
-
-		.card1 div.card__body.vieuxPort{
-	
-		background-image: url(../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-			
-		}
-
-		.card2 div.card__body.fortDePomegues{
-
-		background-image: url(../images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-					
-		}
-
-		.card3 div.card__body.ilesDuFrioul{
-
-		background-image: url(../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-			
-		}
-
-		.card4 div.card__body.ParcNationalDesCalanques{
-
-		background-image: url(../images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-	
-
-		}
-		
-
-		.card5 div.card__body.NotreDameDeLaGarde{
-
-		background-image: url(../images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-	
-		}
-
-
-		.card6 div.card__body.ParcLongchamp{
-
-		background-image: url(../images/activites/3_medium/na-paulin-wH2-EJoDcV0-unsplash.jpg);
-	
-		}
-
-
-
-		/*
-		#additionalContent header {
-
-			padding-bottom: 30px;
-		}
-
-		#additionalContent div.row{
-
-				grid-template-columns: 1fr 1fr;
-				grid-template-rows: 1fr 1fr 1fr;
-
-			}
-		}
-
-		#additionalContent div.row img{	
-
-			height: 120px;
-			object-fit: cover;
-			width: 100%;
-		}
-		*/
-
-		/*
-		#additionalContent div.card1, #additionalContent div.card2, #additionalContent div.card3, #additionalContent div.card4, #additionalContent div.card5, #additionalContent div.card6{
-
-			grid-column:unset;
-            grid-row-start:unset;
-	        grid-row-end:unset;
-		}
-		*/
-
-		/*----------footer--------------*/
-		/*
-		.footer div.container{		
-			
-				align-items: start;
- 			    flex-direction: column;
-				
-		   }
-		  
-
-
-		.footer section {
-
-			margin-right: 10%;
-		*/
-	}	
-
-
-/*--------------------------------------------------------------------------------------------------------------------------------*/   
-/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-@media all  and (min-width: 1024px) and (max-width: 1280px)
-	{
-        .wrapper{
-			min-width: 1024px;
-            max-width: 1280px; /*Un point d'arrêt fluide */
-            margin: 0px 22px; /*Pour centrer les éléments: 
-            je vais définir une marge égale à 0 en haut et en bas et 22px à droite et à gauche*/
-            
-        }
-
-		 /*---------mainContent----------*/
-		 #mainContent div.row{
-
-			display: grid;
-			grid-template-columns: 1fr;
-			gap: 36px;
-		}
-
-		#mainContent div.wrapper-grid{
-
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 1fr 1fr 1fr 0.1fr;
-			gap: 30px;
-			justify-content: center;
-			padding: 0 20px;
-			
-		}
-
-		#mainContent div.aside-container {
-			
-			grid-template-rows: 0.7fr 0.7fr;
-			grid-template-columns: 1fr 1fr;
-			gap: 30px;
-			padding-bottom: 30px;
-		}
-
-		aside header h1{
-
-			padding: 1rem 0 1rem 0.5rem;
-		}
-
-		i.fas.fa-chart-line {
-
-			margin-right: 0.5rem;
-		}
-
-		/*---------additionalContent----------*/
-
-
-		#additionalContent header h1{
-
-			padding: 1rem 0 2rem 0.5rem;
-			
-		}
-
-		#additionalContent div.row{
-
-			
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 1fr 1fr 1fr;	
-			
-		}
-
-		.responsive1, .responsive2, .responsive3, .responsive4, .responsive5, .responsive6{
-
-			height: 120px;
-		}
-
-		#additionalContent div.card1, #additionalContent div.card2, #additionalContent div.card3, #additionalContent div.card4, #additionalContent div.card5, #additionalContent div.card6{
-
-			grid-column:unset;
-            grid-row-start:unset;
-	        grid-row-end:unset;
-		}
-
-
-
-		/*----------footer--------------*/
-
-		.footer section{
-
-			margin-right: 10%;
-		}
-
-		.footer div.container {
-			
-			justify-content: initial;
-
-		}
-
-		 
-    }
-
-
-/*--------------------------------------------------------------------------------------------------------------------------------*/
