@@ -1741,9 +1741,11 @@ les unes à côté des autres sans espacements. */
 			padding-right: 0;
 			padding-left: 0;
 			padding-bottom: 0;
-			position: relative;
-			right: 10px;
-			bottom: 180px;
+			position: absolute;
+			left: 10px;
+			display: block;
+			/*bottom: 180px;*/
+			top: -30px;
 			
 		}
 
