@@ -1189,6 +1189,8 @@ les unes à côté des autres sans espacements. */
 
 		/*------------header--------------*/
 
+		
+
 		#header img{
 
 			max-width: 32%;
@@ -1196,6 +1198,7 @@ les unes à côté des autres sans espacements. */
 
 		/*-------------mainNav------------*/
 
+		
 		#mainNav ul li a{
 
 			padding-right: 1rem;
@@ -1717,14 +1720,24 @@ les unes à côté des autres sans espacements. */
         /*------------header ---------*/
         /*Sur un petit écran : le logo, après avoir affiché la grille de photoshop, occupe 6 grilles,
         ce qui correspond à 48.78% selon le site gridinator.com*/
- 
+		
+
+		#header{
+
+			max-height: 200px;
+		}
         #header img{
 
-	    min-width: 48.78%;
+	    min-width: 40.78%;
 
         }
 
+		header.wrapper{
 
+			align-items: center;
+			max-width: 1440px;
+			margin: auto;
+		}
 
         #header ul{
 
@@ -1742,26 +1755,87 @@ les unes à côté des autres sans espacements. */
 			padding-left: 0;
 			padding-bottom: 0;
 			position: absolute;
-			left: 10px;
+			left: 20px;
 			display: block;
 			/*bottom: 180px;*/
-			top: -30px;
+			top: -10px;
+			
 			
 		}
 
+		#header ul li:first-child a{
 
-        #header ul li.button:focus-visible, #header ul li.button:active {
+			border-bottom: none;
+		}
+
+
+		#header ul li:last-child a{
+
+			margin: auto;
+			border-bottom: none;
+			padding-top: 3rem;
+			align-self: flex-end;
+			margin-right: unset;
+			font-weight: 700;
+		}
+
+
+		#header ul li:last-child a:active{
+
+			color: none;
+			border-bottom: none;
+
+		}
+
+
+		ul.button-group1 li.button a.navigationLink{
 
 			border-top: none;
+			border-bottom: 3px solid var(--icon-border-color);
+			width: 100%;
+			border-bottom-color: var(--link-active-color);
+		}
+
+		ul.button-group1 li.button a.navigationLink[data-active="true"]{
+
+			border-bottom: 4px solid var(--link-active-color);
+		}
+
+
+		#header ul li a{
+
+			padding-top: 2.5rem;
+			padding-bottom: 1.7rem;
+			border-top: none;
+			border-bottom: solid 4px var(--icon-border-color) ;
+			padding-left: 4rem;
+		}
+
+
+        #header ul li.button a:focus, #header ul li.button a:active {
+
             border-bottom: solid 3px var(--link-focus-color);    
             color: var(--link-active-color);
 			
         }
 
+		#header ul li.button{
+
+			
+			font-size: 160%;
+			font-weight: 500;
+			width: 50%;
+			
+		}
 		
+	
 
         /*------------mainNav-----------*/
 
+		#mainNav header{
+
+			margin-top: 1rem;
+		}
 
 		.button-group li h2{
 
@@ -2081,7 +2155,7 @@ les unes à côté des autres sans espacements. */
 
 		#additionalContent div.row{
 
-			grid-template-columns: 0.8fr;
+			grid-template-columns: 1fr;
 			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 			gap:30px;
 			justify-content: start;
