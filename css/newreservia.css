@@ -1705,7 +1705,7 @@ les unes à côté des autres sans espacements. */
 
 
 /*W3SCHOOLS: Extra small devices (phones, 600px and down) & Small devices (portrait tablets and large phones, 600px and up) */
-@media all and (min-width: 480px) and (max-width: 768px)
+@media only screen and (min-width: 481px) and (max-width: 767px) /*tablette + mobile en mode landscape*/
 	{
 		/* Vos règles CSS pour les mobiles ici 
 		Les périphériques mobiles ne dépassant pas 480 px de large*/
