@@ -81,7 +81,7 @@ h1 {
 	font-weight: 800;
 	 /*rem units depend on the body's font-size, so if a font-size is not defined, the default is 16px so 1rem=16px */
 	padding: 1rem 0 1rem 2rem; 
-	/*I want to have a padding for my titles on the top and bottom */
+	/*I want to have a padding for my titles on the top , left and bottom */
 }
 
 
@@ -117,7 +117,7 @@ img {
 	max-width: 1480px; /*Un point d'arrêt fluide */
 	min-width: 1280px;
 	margin: 0px 50px; /*Pour centrer les éléments: 
-	je vais définir une marge égale à 0 en haut et en bas et 22px à droite et à gauche*/
+	je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
 	
 }
 
@@ -154,14 +154,7 @@ définir cinq selecteurs pour mes cinq zones*/
     align-items: start;
 }
 
-/*
-.button:target~a [href="#hebergements"]{
 
-	border-top: solid 2px var(--link-focus-color);
-    color: var(--link-focus-color);
-
-}
-*/
 
 #header ul li{
 
@@ -177,11 +170,7 @@ définir cinq selecteurs pour mes cinq zones*/
 	font-family: 'Raleway', sans-serif;
 	color: var(--header-text-color);
 	padding: 2.5rem 2.5rem 1rem 2.5rem;
-	/*padding-top: 2.5rem;
-	font-weight: 600;
-	padding-right: 2.5rem;
-	padding-left: 2.5rem;
-	padding-bottom: 1rem;*/
+	
 }
 
 .button a:focus, .button a:active{
@@ -232,14 +221,13 @@ définir cinq selecteurs pour mes cinq zones*/
 #mainNav{
 
 	background-color: var(--body-background-color);
-	/* top, right, bottom, left */
-	/*border: 2px solid black;*/
+	
 	
 }
 
 #mainNav header{
 	
-	/*border: 2px solid red;*/
+
 	padding-bottom: 1rem;
 	padding-top: 1rem;
 }
@@ -261,15 +249,15 @@ définir cinq selecteurs pour mes cinq zones*/
 
 #mainNav div.search{
 
-	/*border: 2px solid green;*/
+	
 	padding-bottom: 0.75rem;
-	/*padding-top:0.5rem;*/
+	
 	
 }
 
 #mainNav nav{
 
-	/*border: 2px solid blue;*/
+	
 	padding-bottom: 2.5rem;
 	padding-top: 0.5rem;
 
@@ -443,7 +431,7 @@ i.fas.fa-info-circle::before{
 	justify-content: center;
 	padding: 0 20px;
 	grid-area: wrapper-grid;
-	/*height: calc(70vh - 0px);*/
+	
 	
 }
 
@@ -469,7 +457,6 @@ i.fas.fa-info-circle::before{
 
 	overflow: hidden;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	/*box-shadow: 10px 5px 5px var(--icon-border-color);*/
 	border-radius: 2rem;
 	border: 6px solid var(--body-background-color);
 	cursor: pointer;
@@ -489,7 +476,7 @@ i.fas.fa-info-circle::before{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-	/*border: 2px solid black;*/
+	
 }
 
 
@@ -502,7 +489,7 @@ i.fas.fa-info-circle::before{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-	/*border: 2px solid black;*/
+
 }
 
 
@@ -510,36 +497,36 @@ i.fas.fa-info-circle::before{
 
 	background-image: url(../images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg);
 	object-fit:cover;
-	height:60%;
+	height: 60%;
 	position: relative;
     background-repeat: no-repeat;
 	background-size: cover;
     background-position: center;
-	/*border: 2px solid black;*/
+	
 }
 
 .wrapper-grid div.card__body.hotelDeLaMer{
 
 	background-image: url(../images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
 	object-fit:cover;
-	height:60%;
+	height: 60%;
 	position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-	/*border: 2px solid black;*/
+	
 }
 
 .wrapper-grid div.card__body.aubergeLePanier{
 
 	background-image: url(../images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
 	object-fit:cover;
-	height:60%;
+	height: 60%;
 	position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-	/*border: 2px solid black;*/
+	
 }
 
 .wrapper-grid div.card__body.hotelChezAmina{
@@ -551,7 +538,7 @@ i.fas.fa-info-circle::before{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-	/*border: 2px solid black;*/
+	
 }
 
 
@@ -586,21 +573,6 @@ top: 120px;
 }
 
 
-/*
-.card img{
-
-	height: 12rem;
-	object-fit: cover;
-}
-*/
-/*
-.card__title{
-
-	padding: 1rem;
-    background-color: #ffffff;
-}
-*/
-
 .card__description{
 
 	padding: 0.2rem 1rem;
@@ -616,7 +588,6 @@ top: 120px;
 #mainContent {
 
 	margin-top: 40px;	
-	/*border: 2px solid blue;*/
 		
 }
  
@@ -627,13 +598,9 @@ top: 120px;
 
 	background-color: var(--icon-border-color) ;
 	/*padding: la marge intérieure vs margin: la marge extérieure*/
-	padding: 2rem 20px 0px 20px; /*0 en haut et en bas et 20px à droite et à gauche OU top right bottom left */
+	padding: 2rem 20px 0px 20px; /*2rem en haut , 0 en bas et 20px à droite et à gauche OU top right bottom left */
 	border-radius: 22px;
-	/*	
-	grid-template-columns: repeat(auto-fit, minmax(12rem,16rem));
-	grid-gap:2rem;
-	justify-content: center;
-	*/
+	
 	
 }
 
@@ -644,16 +611,7 @@ top: 120px;
 	padding-right: 1.1rem;
 }
 
-/*
-.aside-container div.card img{
 
-	height: 200px;
-	width: 40%;
-	object-fit: cover;
-	
-	
-}
-*/
 
 .aside-container div.card__body.hotelLeSoleilDuMatin{
 
@@ -716,30 +674,13 @@ top: 120px;
 	
 }
 
-/*
-#mainContent div.row{
 
-	display: flex;
-    gap: 3em;
-
-}
-
-#mainContent div.row > section{
-
-	flex: 1 1 60%;
-}
-
-*/
 
 #mainContent section{
 
 	background-color: var(--icon-border-color);
 	padding: 0px 20px;
 	border-radius: 22px;	
-	/*
-	grid-template-columns: repeat(auto-fit, minmax(12rem,16rem));
-	grid-gap:2rem;
-	justify-content: center;*/
 	
 
 }
@@ -759,13 +700,13 @@ top: 120px;
 	padding: 0 2rem 2.5rem 1rem;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
-	/*border: 2px solid black;*/
+	
 
 }
 
 .Afficher{
 
-	/*border: 2px solid black;*/
+	
 	position: static;
 
 }
@@ -784,12 +725,11 @@ i.fas.fa-chart-line{
 
 #additionalContent{
 
-	/*background: cornflowerblue;Added this color just for testing */
+	
 	background-color: var(--body-background-color);
 	padding: 0px 20px 60px 20px;
 			/*top right bottom left*/
-	/*grid-template-columns: repeat(auto-fit, minmax(12rem,16rem));*/
-	
+		
 }
 
 #additionalContent div.row{
@@ -797,7 +737,6 @@ i.fas.fa-chart-line{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 36px;
-	/*grid-template-rows: repeat(2, 7vw); /*vw = viewport */
 	grid-template-rows:repeat(2, minmax(106px, auto));
 	grid-auto-flow: dense;
 }
@@ -854,22 +793,16 @@ i.fas.fa-chart-line{
 #additionalContent div.card2{
 
 	grid-column: 2;
-    grid-row:1/ span 2;
-	/*border: none;*/
+    grid-row:1/ span 2;	
 	overflow: hidden;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	border-radius: 2rem;
-	/*border: 6px solid black;*/
-	/*display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;*/
+	border-radius: 2rem;	
 	cursor: pointer;
 	/*ease-in - specifies a transition effect with a slow start*/
 	transition: transform 200ms ease-in;
 	/*Transition effects are animation options*/
 	background: var(--body-background-color);
-    /*height:252px;*/
+    
 }
 
 .card2 div.card__body.fortDePomegues{
@@ -898,11 +831,6 @@ i.fas.fa-chart-line{
 	overflow: hidden;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 2rem;
-	/*border: 6px solid black;*/
-	/*display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;*/
 	cursor: pointer;
 	/*ease-in - specifies a transition effect with a slow start*/
 	transition: transform 200ms ease-in;
@@ -1058,45 +986,7 @@ i.fas.fa-chart-line{
 	font-weight: bolder;
 
 }
-/*
-#additionalContent div.row img{
 
-	object-fit: cover;
-	/*The object fit property only works if we set the width and height properties.
-
-}
-
-.responsive1{
-
-	height: 450px;
-	/*396px
-}
-
-.responsive2{
-
-	height:180px;
-}
-
-.responsive3{
-
-	height:90px
-}
-
-.responsive4{
-
-	height: 450px;
-}
-
-.responsive5{
-
-	height:144px;
-}
-
-.responsive6{
-
-	height:144px;
-}
-*/
 
 
 /*-----------footer-------------*/
@@ -1151,7 +1041,9 @@ i.fas.fa-chart-line{
 
 /* Si elle porte en plus la classe '.blue', elle sera en bleu. */
    .fa-star.blue {
+
 	color: var(--link-active-color);
+
    }
 
 
@@ -1657,36 +1549,7 @@ les unes à côté des autres sans espacements. */
 			top:415px;
 		}
 
-		/*
-		#additionalContent header {
-
-			padding-bottom: 30px;
-		}
-
-		#additionalContent div.row{
-
-				grid-template-columns: 1fr 1fr;
-				grid-template-rows: 1fr 1fr 1fr;
-
-			}
-		}
-
-		#additionalContent div.row img{	
-
-			height: 120px;
-			object-fit: cover;
-			width: 100%;
-		}
-		*/
-
-		/*
-		#additionalContent div.card1, #additionalContent div.card2, #additionalContent div.card3, #additionalContent div.card4, #additionalContent div.card5, #additionalContent div.card6{
-
-			grid-column:unset;
-            grid-row-start:unset;
-	        grid-row-end:unset;
-		}
-		*/
+	
 
 		/*----------footer--------------*/
 
@@ -1710,8 +1573,8 @@ les unes à côté des autres sans espacements. */
 		/* Vos règles CSS pour les mobiles ici 
 		Les périphériques mobiles ne dépassant pas 480 px de large*/
         .wrapper{
-           min-width: 480px;
-			max-width: 768px; /*Un point d'arrêt fluide */
+           min-width: 481px;
+			max-width: 767px; /*Un point d'arrêt fluide */
             margin: 0px 22px; /*Pour centrer les éléments: 
             je vais définir une marge égale à 0 en haut et en bas et 22px à droite et à gauche*/
             
@@ -1719,7 +1582,7 @@ les unes à côté des autres sans espacements. */
 
         /*------------header ---------*/
         /*Sur un petit écran : le logo, après avoir affiché la grille de photoshop, occupe 6 grilles,
-        ce qui correspond à 48.78% selon le site gridinator.com*/
+        ce qui correspond à 40.78% selon le site gridinator.com*/
 		
 
 		#header{
@@ -1766,6 +1629,7 @@ les unes à côté des autres sans espacements. */
 		#header ul li:first-child a{
 
 			border-bottom: none;
+			justify-content: unset;
 		}
 
 
@@ -1808,7 +1672,8 @@ les unes à côté des autres sans espacements. */
 			padding-bottom: 1.7rem;
 			border-top: none;
 			border-bottom: solid 4px var(--icon-border-color) ;
-			padding-left: 4rem;
+			justify-content: center;
+			/*padding-left: 4rem;*/
 		}
 
 
@@ -1825,6 +1690,8 @@ les unes à côté des autres sans espacements. */
 			font-size: 160%;
 			font-weight: 500;
 			width: 50%;
+			padding-right: 0.2rem;
+
 			
 		}
 		
@@ -2093,7 +1960,7 @@ les unes à côté des autres sans espacements. */
 
 		.aside-container div.card{
 
-			min-height: 180px;
+			min-height: 170px;
 		}
 
 
@@ -2234,8 +2101,7 @@ les unes à côté des autres sans espacements. */
          .footer div.container{
        
         
-         justify-content:center;        
-        justify-content:center;
+         
          justify-content:center;  
         flex-direction: column;
     
@@ -2246,3 +2112,582 @@ les unes à côté des autres sans espacements. */
 
      
     }
+
+
+
+/*------------------------------------------------------------the smallest screens---------------------------------------------------------------*/	
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+
+	.wrapper{
+		min-width: 320px;
+		 max-width: 480px; /*Un point d'arrêt fluide */
+		 margin: 0px 20px; /*Pour centrer les éléments: 
+		 je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+		 
+	 }
+
+	 /*------------header ---------*/
+        /*Sur un petit écran : le logo, après avoir affiché la grille de photoshop, occupe 6 grilles,
+        ce qui correspond à 40.78% selon le site gridinator.com*/
+		
+
+		#header{
+
+			max-height: 200px;
+		}
+
+        #header img{
+
+	    min-width: 40.78%;
+
+        }
+
+		header.wrapper{
+
+			align-items: center;
+			max-width: 1440px;
+			margin: auto;
+		}
+
+        #header ul{
+
+			
+            margin-top: auto;
+			flex-wrap: wrap-reverse;
+			margin-bottom: 2rem;
+            
+        }
+		
+		#header ul li:first-child{
+
+			margin-right: auto;
+			padding-right: 0;
+			padding-left: 0;
+			padding-bottom: 0;
+			position: absolute;
+			left: 20px;
+			display: block;
+			top: -10px;
+			
+			
+		}
+
+		#header ul li:first-child a{
+
+			border-bottom: none;
+			justify-content: unset;
+		}
+
+
+		#header ul li:last-child a{
+
+			margin: auto;
+			border-bottom: none;
+			padding-top: 3rem;
+			align-self: flex-end;
+			margin-right: unset;
+			font-weight: 700;
+		}
+
+
+		#header ul li:last-child a:active{
+
+			color: none;
+			border-bottom: none;
+
+		}
+
+
+		ul.button-group1 li.button a.navigationLink{
+
+			border-top: none;
+			border-bottom: 3px solid var(--icon-border-color);
+			width: 100%;
+			border-bottom-color: var(--link-active-color);
+		}
+
+		ul.button-group1 li.button a.navigationLink[data-active="true"]{
+
+			border-bottom: 4px solid var(--link-active-color);
+		}
+
+
+		#header ul li a{
+
+			padding-top: 2.5rem 2rem 1.7rem 2rem;
+			border-top: none;
+			border-bottom: solid 4px var(--icon-border-color) ;
+			justify-content: center;
+		}
+
+
+        #header ul li.button a:focus, #header ul li.button a:active {
+
+            border-bottom: solid 3px var(--link-focus-color);    
+            color: var(--link-active-color);
+			
+        }
+
+		#header ul li.button{
+
+			
+			font-size: 120%;
+			font-weight: 700;
+			width: 50%;
+			padding-right: 0.2rem;
+
+		}
+		
+	
+
+        /*------------mainNav-----------*/
+
+		#mainNav header{
+
+			margin-top: 1rem;
+		}
+
+		.button-group li h2{
+
+			margin-right: 25rem;
+			margin-bottom: 1.5rem;
+			font-size: 150%;
+		}
+
+		
+        .fa-money-bill-wave::before, .fa-child::before, .fa-heart::before, .fa-dog::before{
+
+			padding: 20px;
+			padding-left:22px;
+			border-radius: 35px;
+			font-size: 110%;
+		}
+
+
+		.button1{
+
+			margin-bottom: 1.4rem;
+		}
+
+		#mainNav ul li a{
+
+			margin-left: 0;
+			margin-right: 1rem;
+			padding: 1rem 1.5rem 1rem 0;
+			font-size: 140%;
+			font-weight: 800;
+			border-radius: 30px;
+		}
+
+        form.search-form button.Rechercher{
+
+            display: none;
+
+        }
+
+
+
+		form.search-form button.search_icon{
+
+			display:initial;
+			border-radius: 18px;
+			border: 2px solid var(--link-active-color);
+			background-color: var(--link-active-color);
+			padding: 18px 20px 18px 20px;
+			color: var(--body-background-color);
+			font-size: 130%;
+
+		}
+
+		
+		#site-search {
+
+		
+			margin-right: -30px;
+			font-size: 90%;
+			
+		}
+
+		#mainNav header h2{
+
+			font-weight: 700;
+			font-size: 180%;
+			padding-right: 2rem;
+		}
+
+		#mainNav header p{
+
+			padding-bottom: 2rem;
+			padding-top: 0.5rem;
+			font-size: 130%;
+			font-weight: 600;
+		}
+
+		#mainNav ul li a {
+
+			padding: 1rem 1rem 1rem 0;
+			font-size: 130%;
+		}
+
+
+		#mainNav nav{
+
+			padding-bottom: 2rem;
+		}
+        
+		#mainNav div.container footer p{
+
+			font-size: 140%;
+			padding-bottom: 1%;
+			
+		}
+
+		i.fas.fa-info-circle::before{
+
+			font-size: 135%;
+		}
+
+		i.fas.fa-map-marker-alt{
+
+			font-size: 140%;
+			padding: 20px;
+		}
+
+        /*---------mainContent----------*/
+
+
+
+		#mainContent section header{
+			
+			padding-top: 0;
+
+		}
+
+		#hebergements h1{
+
+			font-size: 150%;
+			font-weight: 700;
+			padding:0 0 1rem 0.8rem;
+		
+		}
+
+		#hebergements div.card{
+
+			min-height: 240px;
+		}
+
+		#mainContent div.row > section{
+
+			order: 2;
+			
+		}
+
+
+        #mainContent section{
+
+            background-color: var(--body-background-color);
+    
+        }
+
+		#mainContent div.wrapper-grid{
+
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 0.1fr;
+			gap: 15px;
+			justify-content: center;
+			padding: 0 20px;
+			
+			
+		}
+
+		.wrapper-grid h3{
+
+			top: 140px;
+		}
+		
+		.wrapper-grid div.card__description{
+
+			top: 140px;
+		}
+
+		.stars{
+
+			font-size: 0.9em;
+		}
+
+		.wrapper-grid div.card__body.aubergeLaCannebiere{
+
+		background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+		height: 90%;
+	
+		}
+
+
+		.wrapper-grid div.card__body.hotelDuPort{
+
+		background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+		height: 90%;	
+
+		}
+
+
+		.wrapper-grid div.card__body.hotelLesMouettes{
+
+		background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+		height: 90%;
+
+		}
+
+		.wrapper-grid div.card__body.hotelDeLaMer{
+
+		background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+		height: 90%;
+
+		}
+
+		.wrapper-grid div.card__body.aubergeLePanier{
+
+		background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+		height: 90%;
+
+		}
+
+		.wrapper-grid div.card__body.hotelChezAmina{
+
+		background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+		height: 90%;	
+		}
+
+
+
+		#mainContent div.wrapper{
+
+			margin:0;
+		}
+
+
+
+		#mainContent div.row{
+
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 36px;
+		}
+
+		
+
+		#mainContent div.row > aside{
+
+			order: 1;
+			border-radius: 0;
+		}
+
+
+		#mainContent div.aside-container {
+			
+			grid-template-rows: 1.1fr 1.1fr 1.1fr 0.2fr;
+			grid-template-columns: 1.4fr;
+			padding-bottom: 5px;
+			grid-gap: 15px;
+		}
+
+		
+		.Afficher h2{
+
+			font-weight: 700;
+			font-size: 135%;
+			padding: 0.5rem 2rem 1.2rem 1rem;
+		}
+
+		aside header h1{
+
+			padding: 1rem;
+			font-size: 150%;
+			font-weight: 700;
+		}
+
+		i.fas.fa-chart-line{
+
+			font-size: 150%;
+			margin-right: 1rem;
+		}
+
+		.aside-container div.card{
+
+			min-height: 170px;
+			padding-right: 0.5rem;
+		}
+
+
+		.aside-container div.card__body.hotelLeSoleilDuMatin{
+
+			background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+			height: 170px;
+			background-position: initial;
+			background-size: 50% 100%; /*first value : width, second value : height*/
+		}
+		
+		.aside-container div.card__body.auCoeurDeLeau{
+		
+			
+			background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+			height: 170px;
+			background-position: initial;
+			background-size: 50% 100%;
+		}
+		
+		.aside-container div.card__body.hotelToutBleuEtBlanc{
+			
+			background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+			height: 170px;
+			background-position: initial;
+			background-size: 50% 100%;
+
+		}
+
+		.aside-container div.card__description{
+
+			padding: 0.01rem 0.2rem;
+			width: 65%;
+		}
+		
+		.aside-container div.card__description p{
+
+			padding-bottom: 35%;
+			font-size: medium;
+			
+		}
+
+		.aside-container div.card__description h3{
+
+			font-size: medium;
+			padding-top: 0;
+		}
+
+		.aside-container div.card:second-child p{
+
+			padding-bottom: 25%;
+		}
+
+		/*---------additionalContent----------*/
+
+		#additionalContent header {
+
+			padding-bottom: 25px;
+			margin-left: -5px;
+			font-weight: bolder;
+		}
+
+
+		#additionalContent header h1{
+
+			font-size: 150%;
+			padding-left: 0;
+			padding-bottom: 0.5rem;
+		}
+
+		#additionalContent h1.card__title{
+
+			font-size: 120%;
+		
+		}
+
+		#additionalContent div.row{
+
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+			gap:30px;
+			justify-content: start;
+			
+		}
+
+
+		.card1 h1, .card2 h1, .card3 h1, .card4 h1, .card5 h1, .card6 h1{
+
+			top: 170px;
+		}
+
+
+		#additionalContent div.card1, 
+		#additionalContent div.card2,
+		 #additionalContent div.card3,
+		  #additionalContent div.card4,
+		   #additionalContent div.card5, 
+		   #additionalContent div.card6{
+
+			grid-column:unset;
+            grid-row-start:unset;
+	        grid-row-end:unset;
+			height: 235px;
+		}
+
+		
+			.card1 div.card__body.vieuxPort{
+	
+			background-image: url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+			height: 70%;	
+
+			}
+	
+			.card2 div.card__body.fortDePomegues{
+	
+			background-image: url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+			height: 70%;	
+
+			}
+	
+			.card3 div.card__body.ilesDuFrioul{
+	
+			background-image: url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+			height: 70%;
+
+			}
+	
+			.card4 div.card__body.ParcNationalDesCalanques{
+	
+			background-image: url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+			height: 70%;	
+	
+			}
+			
+	
+			.card5 div.card__body.NotreDameDeLaGarde{
+	
+			background-image: url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+			height: 70%;
+
+			}
+	
+	
+			.card6 div.card__body.ParcLongchamp{
+	
+			background-image: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+			height: 70%;
+
+			}
+
+
+        /*----------footer------------*/
+
+
+         .footer div.container{
+       
+        
+         
+         justify-content:center;  
+        flex-direction: column;
+    
+       }
+
+	   
+
+
+     
+    }
+	
+
+}
